@@ -57,10 +57,10 @@ Certificates
 ======
 * 2020: Database course
   * ITBA
-  * Lecture: Prof. Valeria Soliani
+  * Lecturer: Prof. Valeria Soliani
   * Topics: Conceptual, Logical and Physical Data Model, Relational Algebra, SQL, Normalization, Introduction to Data Warehousing. Tools: PostgreSQL.
   
-ExtraCurricular Activites
+Extracurricular Activites
 ======
 * 2017 - Present: Member of the Permanent Curricular Committee of the Electronic Engineering Career (CC).
 * 2018 - Present: Member of the Advisory Board of the Electronics Department (CA).
