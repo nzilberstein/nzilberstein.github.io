@@ -8,12 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-This is Nicolás Zilberstein's webpage.
-
-Section 1
+About me
 ======
-Test 1
-
-Subsection1
-------
-Test2
+Page under construction
