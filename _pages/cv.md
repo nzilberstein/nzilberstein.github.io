@@ -12,7 +12,8 @@ redirect_from:
 Education
 ======
 * Electronic Engineer, University of Buenos Aires, 2020
-  * GPA = 8.21
+  * GPA: 8.21
+  * Thesis: Development of inference algorithm for UWB-GPR signals. Advisor/Co-Advisor: Prof. Juan Augusto Maya/ Prof. Andres Altieri.
   
 Research experience
 ====== 
