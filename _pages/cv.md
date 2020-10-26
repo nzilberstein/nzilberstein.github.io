@@ -11,16 +11,28 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Electronic Engineer, University of Buenos Aires, 2020
+  * GPA = 8.21
+  
+Research experience
+====== 
+* 2018-2020: Research Assistant
+  * Laboratory of Signal Processing in Communications (LPSC),
+  * School of Engineering, University of Buenos Aires,
+  * Supervisor: Prof. Juan Augusto Maya, Prof. Andrés Oscar Altieri
+  * UBACyT project: 20020170200283BA
+  * Topics: UWB-GPR radar, Green's Function for modelling electromagnetic scattering, gprMax software, Sparse Bayesian Learning Algorithm.
+  
+* 2018: Research Assistant
+  * Laboratory for Research in Signal and Image Processing and Neural Networks (LIPSIRN),
+  * School of Engineering, University of Buenos Aires,
+  * Supervisor: Prof. Bruno Cernuschi Frias
+  * Topics: Data fusion, Particle filter and Probabilistic graphical models.
 
-Work experience
+Industry experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2019 - Present: Data Engineer
+  * ExxonMobil 
 
 * Fall 2015: Research Assistant
   * Github University
@@ -29,27 +41,11 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
+* Matlab
+* Python
+* LaTeX
+* gprMax
+* C
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
