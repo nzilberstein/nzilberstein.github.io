@@ -9,6 +9,5 @@ paperurl: 'https://ieeexplore.ieee.org/document/8577376'
 citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 
-#[Download paper here](http://academicpages.github.io/files/paper3.pdf)
 
 N. Martín Zilberstein and B. Cernuschi-Frias, "Particle Filter with Unknown Noise Statistics and with Prior Knowledge," 2018 Argentine Conference on Automatic Control (AADECA), Buenos Aires, 2018, pp. 1-6.
