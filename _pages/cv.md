@@ -34,11 +34,16 @@ Industry experience
 * 2019 - Present: Data Engineer
   * ExxonMobil 
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
+Awards 
+======
+* 2020: Selected as representative of FIUBA for the NYUAD Hackathon 2020, organized by the New York University at Abu Dhabi.
+* 2018: UBACyT Scholarship for scientific initation, awarded by UBA.
+
+Languages
+======
+* Spanish: Mothertongue
+* English: IELTS Academic - 7.0 (C1).
+
 Skills
 ======
 * Matlab
@@ -46,10 +51,16 @@ Skills
 * LaTeX
 * gprMax
 * C
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
-Service and leadership
+Certificates
 ======
-* Currently signed in to 43 different slack teams
+* 2020: Database course
+  * ITBA
+  * Lecture: Prof. Valeria Soliani
+  * Topics: Conceptual, Logical and Physical Data Model, Relational Algebra, SQL, Normalization, Introduction to Data Warehousing. Tools: PostgreSQL.
+  
+ExtraCurricular Activites
+======
+* 2017 - Present: Member of the Permanent Curricular Committee of the Electronic Engineering Career (CC).
+* 2018 - Present: Member of the Advisory Board of the Electronics Department (CA).
+* 2019 - Present: Student Member of the Council of the School of Engineering, University of Buenos Aires.
