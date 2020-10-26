@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Welcome to Nico Zilberstein's page"
+title                    : "Nicolas Zilberstein"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com.ar/citations?user=6b9O8cUAAAAJ&hl=es"
-  email            :
+  email            : "nzilberstein@fi.uba.ar"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
