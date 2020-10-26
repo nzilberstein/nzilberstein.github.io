@@ -8,6 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-About me
-======
 Page under construction
