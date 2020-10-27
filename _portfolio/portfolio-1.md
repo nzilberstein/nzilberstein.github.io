@@ -1,6 +1,6 @@
 ---
 title: "NYU Abu Dabhi hackathon 2020"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+excerpt: "[Hackathon Web Page](https://sites.nyuad.nyu.edu/hackathon/)"
 collection: portfolio
 ---
 
