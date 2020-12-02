@@ -37,6 +37,7 @@ Industry experience
 
 Awards 
 ======
+* 2020: "Excellence in Research" award from the ECE section of the Gulf Coast Undergraduate Research Symposium.
 * 2020: Selected as representative of FIUBA for the NYUAD Hackathon 2020, organized by the New York University at Abu Dhabi.
 * 2018: UBACyT Scholarship for scientific initation, awarded by UBA.
 
