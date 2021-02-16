@@ -11,6 +11,8 @@ redirect_from:
 
 Education
 ======
+* Ph.D. student, Electrical & Computer Engineering, Rice University, 2021-Actual
+
 * Electronic Engineer, University of Buenos Aires, 2020
   * GPA: 8.21
   * Thesis: Development of inference algorithm for UWB-GPR signals. Advisor/Co-Advisor: Prof. Juan Augusto Maya/ Prof. Andres Altieri.
@@ -32,7 +34,7 @@ Research experience
 
 Industry experience
 ======
-* 2019 - Present: Data Engineer
+* 2019 - 2021: Data Engineer
   * ExxonMobil 
 
 Awards 
@@ -52,7 +54,6 @@ Skills
 * Python
 * LaTeX
 * gprMax
-* C
   
 Certificates
 ======
