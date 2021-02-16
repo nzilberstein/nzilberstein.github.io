@@ -4,10 +4,16 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+Journal Papers
+=============
+
+2020
+-------
+
+1. Zilberstein, N., Maya, J.A. and Altieri, A. (2021), A BCS microwave imaging algorithm for object detection and shape reconstruction tested with experimental data. Electron. Lett., 57: 88-91. https://doi.org/10.1049/ell2.12059
 
 Conference Papers
 =============
-
 
 2018
 -------
