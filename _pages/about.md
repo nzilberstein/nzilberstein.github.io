@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am an Electronic Engineer, interested in Signal Processing, in particular Graph Signal Processing, Learning Theory and Bayesian methods, such as Particle filters and Monte Carlo methods. 
+I am a first year Ph.D. student in the department of Electrical & Computer Engineering at Rice University, advised by Prof. Santiago Segarra. My current interests lie in Signal Processing and Machine Learning. Currently working on Machine Learning applied to Communications.
 
-I was born in Buenos Aires, Argentina where I graduated from Universidad de Buenos Aires in 2020 as an Electrical Engineer. Currently, I am working in ExxonMobil as a Data Engineer and as a Teaching Assitant in Physics 2, UBA. 
+I was born in Buenos Aires, Argentina where I graduated from Universidad de Buenos Aires in 2020 as an Electronic Engineer.
