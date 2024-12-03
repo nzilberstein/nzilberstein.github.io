@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>[Department of Electrical and Computer Engineering, Rice University](https://eceweb.rice.edu)</a>
+subtitle: [Department of Electrical and Computer Engineering, Rice University](https://eceweb.rice.edu)
 
 profile:
   align: right
