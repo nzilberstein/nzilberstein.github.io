@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: [Department of Electrical and Computer Engineering, Rice University](https://eceweb.rice.edu)
+subtitle: Department of Electrical and Computer Engineering, Rice University
 
 profile:
   align: right
