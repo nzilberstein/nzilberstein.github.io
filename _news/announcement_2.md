@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am honored to receive the Ken Kennedy – HPE Cray Graduate Fellowship
+I am honored to receive the [Ken Kennedy – HPE Cray Graduate Fellowship](https://kenkennedy.rice.edu/funding/seed-funding)
