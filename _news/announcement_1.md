@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint Scalable Implicit Graphon Learning
+New preprint [Scalable Implicit Graphon Learning](https://arxiv.org/abs/2410.17464)
