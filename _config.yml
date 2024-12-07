@@ -202,7 +202,7 @@ collections:
   papers:
     preprints:
       - archiveprefix: "arXiv"
-      
+
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
@@ -250,6 +250,9 @@ exclude:
   - _pages/about_einstein.md
   - _pages/projects.md
   - _pages/dropdown.md
+  - _pages/cv.md
+  - _pages/repositories.md
+  - _pages/teaching.md
   - purgecss.config.js
   - README.md
   - readme_preview/
