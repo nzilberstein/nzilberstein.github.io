@@ -143,6 +143,11 @@
         >
         </i>
       {% endif %}
+      {% if entry.archiveprefix == "arXiv" %}
+        Preprint
+      {% else %}
+        {{ entry.type | capitalize }}
+      {% endif %}
     </div>
 
     <!-- Journal/Book title and date -->

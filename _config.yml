@@ -199,7 +199,10 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
-
+  papers:
+    preprints:
+      - archiveprefix: "arXiv"
+      
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
@@ -245,6 +248,8 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/projects.md
+  - _pages/dropdown.md
   - purgecss.config.js
   - README.md
   - readme_preview/
