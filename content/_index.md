@@ -9,7 +9,7 @@ Final-year PhD student @ Rice University
 [nzilberstein@rice.edu](mailto:nzilberstein@rice.edu) ·
 [Google Scholar](https://scholar.google.com/citations?user=nXRpGgkAAAAJ&hl=en&authuser=1) ·
 [Git](https://github.com/nzilberstein?tab=repositories) ·
-[X](https://x.com/REPLACE_ME) ·
+[X](https://x.com/nizilberstein) ·
 [LinkedIn](https://www.linkedin.com/in/nicolas-zilberstein-a0b39b9a/)
 {{< /profile >}}
 
