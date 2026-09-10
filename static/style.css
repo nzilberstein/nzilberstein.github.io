@@ -239,3 +239,88 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
   text-transform: none;
   letter-spacing: normal;
 }
+/* ---------------------------------------------------------------
+   Typography: proportional body text, monospace kept for structure.
+
+   The theme sets Fira Code on `body`, so every paragraph is monospace.
+   That is fine for code but costs reading speed on running prose, so
+   body text moves to IBM Plex Sans while headings, the logo, the nav
+   and code stay monospace. Plex Sans and Plex Mono are a designed
+   superfamily, so the mix reads as deliberate.
+
+   Self-hosted: the theme makes no external font requests and this
+   keeps it that way.
+   --------------------------------------------------------------- */
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Monospace stays where it carries the theme's character. */
+h1, h2, h3, h4, h5, h6,
+.logo, .logo__text,
+.navigation-menu, .menu,
+code, kbd, pre, pre code, samp {
+  font-family: "Fira Code", Monaco, Consolas, "Ubuntu Mono", monospace;
+}
+
+/* ---------------------------------------------------------------
+   Measure: cap running text at a comfortable line length while
+   letting wide elements (the matrix, publication lists) use the
+   full column.
+   --------------------------------------------------------------- */
+.container.full {
+  max-width: 1150px;
+}
+
+.content p,
+.content ul,
+.content ol,
+.content blockquote {
+  max-width: 46em;
+}
+
+.pubs,
+.pubs__list,
+.pubmatrix,
+.pubmatrix__list,
+.profile__body p {
+  max-width: none;
+}
