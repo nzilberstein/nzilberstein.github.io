@@ -13,4 +13,4 @@ title: "Publications"
 
 ## Patents
 
-- **Systems and methods for statistics based and topology based interoperable AI/ML model monitoring** — Akshay Malhotra, Yugeswar Deenoo, Nicolas Zilberstein, Shahab Hamidi-Rad, Mohamed Salah Ibrahim. InterDigital, US Patent Ref. 18889096, 2024.
+**Systems and methods for statistics based and topology based interoperable AI/ML model monitoring** — Akshay Malhotra, Yugeswar Deenoo, Nicolas Zilberstein, Shahab Hamidi-Rad, Mohamed Salah Ibrahim. InterDigital, US Patent Ref. 18889096, 2024.

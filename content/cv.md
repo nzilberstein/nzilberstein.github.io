@@ -43,7 +43,7 @@ title: "CV"
 
 **Research Assistant** · School of Engineering, University of Buenos Aires · 2018–2019
 
-- PIs: Prof. Bruno Cernuschi-Frias, Prof. Juan Augusto Maya, Prof. Andres Altieri
+- PIs: Bruno Cernuschi-Frias, Juan Augusto Maya, Andres Altieri
 - Keywords: particle filter, ground penetrating radar imaging, Green's function, sparse Bayesian learning
 
 ## Awards
@@ -71,13 +71,14 @@ title: "CV"
 - REA (Rice Engineering Alumni) Graduate Student Travel Grant — 2025
 
 
-## Professional activities
-
-### Invited talks
+## Talks
 
 - **From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems** — Universidad de la República, Uruguay, Dec 2025
 - **From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems** — Yusu Wang's group, UCSD, Nov 2025
 - **Towards fast samplers for solving inverse problems using diffusion models** — Pendulum Systems, Jun 2024
+
+
+## Professional activities
 
 ### Organization
 
@@ -103,7 +104,3 @@ title: "CV"
 - Member, Council of the Faculty of Engineering, University of Buenos Aires — 2019–2021
 - Member, Advisory Board, Department of Electronics, University of Buenos Aires — 2018–2021
 - Member, Curricular Committee, Electronic Engineering Degree, University of Buenos Aires — 2017–2021
-
-## Languages
-
-Spanish (native), English (fluent)

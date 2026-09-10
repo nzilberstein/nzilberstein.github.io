@@ -306,21 +306,10 @@ code, kbd, pre, pre code, samp {
    letting wide elements (the matrix, publication lists) use the
    full column.
    --------------------------------------------------------------- */
+/* The header stripe spans the container, so the prose spans it too --
+   otherwise text stops around two-thirds of the way across and leaves a
+   dead margin on the right. The container itself is what sets the
+   measure, so it is narrower than the full window. */
 .container.full {
-  max-width: 1150px;
-}
-
-.content p,
-.content ul,
-.content ol,
-.content blockquote {
-  max-width: 46em;
-}
-
-.pubs,
-.pubs__list,
-.pubmatrix,
-.pubmatrix__list,
-.profile__body p {
-  max-width: none;
+  max-width: 1000px;
 }
