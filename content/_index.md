@@ -23,12 +23,6 @@ I am a final-year PhD student in Electrical and Computer Engineering at [Rice Un
 
 Before moving to the US, I graduated from [Universidad de Buenos Aires](https://www.fi.uba.ar/) (FIUBA) in 2020 with a degree in Electrical Engineering. I was born in the beautiful city of Buenos Aires, Argentina.
 
-## News
-
-- May 26 I started my internship at Google, working with the Computational Imaging team
-- Feb 26 Paper accepted at ICML 2026
-- Dec 25 I am honored to receive the NVIDIA Academic Grant as a co-author to support our work entitled "Test-time Scaling with Ensemble Kalman for Inference via Diffusion Models"
-
 ## Research interests
 
 My research sits at the intersection of generative modeling, inverse problems, and sampling.
@@ -44,6 +38,12 @@ Application side, I work across several data modalities.
      cols="pretrain: Inference-time methods; train: Training new models"
      rows="imaging: Imaging; graph: Graphs; wireless: Wireless" >}}
 
+
+## News
+
+- May 2026 — I started my internship at Google, working with the Computational Imaging team
+- Feb 2026 — Paper accepted at ICML 2026
+- Dec 2025 — I am honored to receive the NVIDIA Academic Grant as a co-author to support our work entitled "Test-time Scaling with Ensemble Kalman for Inference via Diffusion Models"
 
 ## Selected publications
 

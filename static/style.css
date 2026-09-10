@@ -209,8 +209,22 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
   list-style: none;
 }
 
+/* Two papers in one cell each wrap over several lines, so spacing alone
+   does not separate them; give each entry a visible marker. */
+.pubmatrix__list li {
+  position: relative;
+  padding-left: 1.1em;
+}
+
+.pubmatrix__list li::before {
+  content: "\2013";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
 .pubmatrix__list li + li {
-  margin-top: 0.6rem;
+  margin-top: 0.75rem;
 }
 
 .pubmatrix__year {
