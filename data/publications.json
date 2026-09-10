@@ -1,0 +1,66 @@
+[
+  {
+    "year": "2026",
+    "items": [
+      {
+        "key": "example2026diffusion",
+        "title": "An Example Paper Title with an MRI Acronym",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Katherine L. Bouman"
+        ],
+        "year": "2026",
+        "venue": "Journal of Example Research",
+        "url": "https://example.org/paper",
+        "doi": "",
+        "code": "https://github.com/nzilberstein/example",
+        "note": "",
+        "image": "/image_scholar.jpg",
+        "image_alt": "",
+        "keywords": [
+          "highlighted"
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2025",
+    "items": [
+      {
+        "key": "example2025sampling",
+        "title": "Another Example Paper",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Santiago Segarra"
+        ],
+        "year": "2025",
+        "venue": "Proceedings of the Example Conference (EXCONF)",
+        "url": "https://example.org/paper2",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": [
+          "highlighted"
+        ]
+      },
+      {
+        "key": "zilberstein2025thesis",
+        "title": "An Example PhD Thesis Title",
+        "authors": [
+          "Nicolas Zilberstein"
+        ],
+        "year": "2025",
+        "venue": "PhD thesis, Rice University",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      }
+    ]
+  }
+]

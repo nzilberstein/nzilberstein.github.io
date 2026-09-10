@@ -1,0 +1,54 @@
+{{/* One publication, as a single flowing line. Called with:
+       dict "pub" <entry> "me" <author name to bold>
+     If the entry has an `image`, it renders as a thumbnail to the left
+     with the text beside it. */}}
+{{ $pub := .pub }}
+{{ $me := .me }}
+{{ $parts := slice }}
+
+{{/* Title, bold and linked when there is a URL. Add a full stop only if
+     the title does not already end in punctuation. */}}
+{{ $t := htmlEscape $pub.title }}
+{{ $dot := cond (or (hasSuffix $pub.title ".") (or (hasSuffix $pub.title "?") (hasSuffix $pub.title "!"))) "" "." }}
+{{ $title := printf "<strong>%s</strong>%s" $t $dot }}
+{{ with $pub.url }}
+  {{ $title = printf `<a href="%s"><strong>%s</strong></a>%s` . $t $dot }}
+{{ end }}
+{{ $parts = $parts | append $title }}
+
+{{ with $pub.authors }}
+  {{ $names := slice }}
+  {{ range . }}
+    {{ if and $me (eq . $me) }}
+      {{ $names = $names | append (printf "<strong>%s</strong>" (htmlEscape .)) }}
+    {{ else }}
+      {{ $names = $names | append (htmlEscape .) }}
+    {{ end }}
+  {{ end }}
+  {{ $parts = $parts | append (printf `<span class="pub__authors">%s.</span>` (delimit $names ", ")) }}
+{{ end }}
+
+{{ $venue := $pub.venue }}
+{{ if and $venue $pub.year }}{{ $venue = printf "%s, %s" $venue $pub.year }}{{ end }}
+{{ with $pub.note }}{{ $venue = printf "%s. %s" $venue . }}{{ end }}
+{{ with $venue }}
+  {{ $parts = $parts | append (printf `<span class="pub__venue">%s.</span>` (htmlEscape .)) }}
+{{ end }}
+
+{{ $links := slice }}
+{{ with $pub.url }}{{ $links = $links | append (printf `<a href="%s">paper</a>` .) }}{{ end }}
+{{ with $pub.code }}{{ $links = $links | append (printf `<a href="%s">code</a>` .) }}{{ end }}
+{{ with $pub.doi }}{{ $links = $links | append (printf `<a href="https://doi.org/%s">doi</a>` .) }}{{ end }}
+{{ with $links }}
+  {{ $parts = $parts | append (printf `<span class="pub__links">[%s]</span>` (delimit . "] [")) }}
+{{ end }}
+
+{{ $text := delimit $parts " " }}
+{{ with $pub.image }}
+  <li class="pub pub--figure">
+    <img class="pub__thumb" src="{{ . | safeURL }}" alt="{{ $pub.image_alt | default $pub.title | plainify }}" />
+    <div class="pub__text">{{ $text | safeHTML }}</div>
+  </li>
+{{ else }}
+  <li class="pub">{{ $text | safeHTML }}</li>
+{{ end }}

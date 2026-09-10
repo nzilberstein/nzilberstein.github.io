@@ -113,3 +113,55 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
     width: 140px;
   }
 }
+
+/* ---------------------------------------------------------------
+   Publication list (generated from publications.bib)
+   --------------------------------------------------------------- */
+.pubs__year {
+  margin: 1.75rem 0 0.75rem;
+}
+
+.pubs__list {
+  margin: 0;
+  padding: 0;
+  /* No bullets: a flex item (an entry with a teaser image) cannot render
+     a list marker, so markers would appear on some entries but not
+     others. */
+  list-style: none;
+}
+
+/* Each entry flows as a single wrapping line, so every part is inline
+   and separated by a normal word space. */
+.pub {
+  margin: 0 0 0.6rem;
+}
+
+.pub__authors,
+.pub__venue {
+  opacity: 0.85;
+}
+
+/* An entry with a teaser image: thumbnail left, text beside it. */
+.pub--figure {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pub__thumb {
+  flex: 0 0 auto;
+  width: 150px;
+  /* Same two theme defaults the portrait has to override: a chunky 8px
+     accent border, and `margin: 25px 0` on every img. */
+  border-width: 3px;
+  padding: 3px;
+  margin: 0;
+}
+
+@media (max-width: 620px) {
+  .pub--figure {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
