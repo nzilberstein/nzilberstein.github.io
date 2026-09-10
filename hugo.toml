@@ -1,0 +1,35 @@
+baseURL = "https://nzilberstein.github.io/"
+locale = "en-us"
+theme = "terminal"
+
+[markup.highlight]
+  noClasses = false
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 3
+  fullWidthTheme = true
+  centerTheme = false
+
+[languages]
+  [languages.en]
+    title = "Nicolas Zilberstein"
+    [languages.en.params]
+      subtitle = ""
+      readMore = "Read more"
+      copyright = "© 2026 Nicolas Zilberstein"
+      [languages.en.params.logo]
+        logoText = "Nicolas Zilberstein"
+        logoHomeLink = "/"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "cv"
+        name = "CV"
+        url = "/cv.pdf"
+      [[languages.en.menu.main]]
+        identifier = "publications"
+        name = "Publications"
+        url = "/publications"

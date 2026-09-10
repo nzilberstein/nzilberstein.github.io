@@ -1,0 +1,115 @@
+/* ---------------------------------------------------------------
+   Caltech black & orange for hugo-theme-terminal, with a
+   light/dark toggle. The theme derives every colour from these
+   three variables (it even uses color-mix() on them), so swapping
+   them is enough to repaint the whole site.
+   --------------------------------------------------------------- */
+
+/* Dark is the default, and applies when JS is off. */
+:root,
+html[data-theme="dark"] {
+  --background: #0f0f0f;   /* near-black; pure #000 is harsh on screens */
+  --foreground: #e8e8e8;
+  --accent: #ff6c0c;       /* Caltech orange */
+}
+
+/* Explicit light choice. */
+html[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  /* Caltech orange is only ~2.9:1 on white, below the 4.5:1 needed
+     for body text, so light mode uses a darkened shade (~5:1). */
+  --accent: #c2410c;
+}
+
+/* Dark is the site's default look regardless of the visitor's OS setting;
+   the toggle is what opts into light. To follow the OS preference instead,
+   restore the @media (prefers-color-scheme: light) block here. */
+
+/* ---------------------------------------------------------------
+   Light/dark toggle button
+   --------------------------------------------------------------- */
+#theme-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  font-family: inherit;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--accent);
+  background: var(--background);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+#theme-toggle:hover,
+#theme-toggle:focus-visible {
+  color: var(--background);
+  background: var(--accent);
+}
+
+/* The icon is swapped by CSS, so the button stays correct even if
+   the page is restored from cache. */
+#theme-toggle .icon-light { display: none; }
+#theme-toggle .icon-dark  { display: inline; }
+html[data-theme="light"] #theme-toggle .icon-light { display: inline; }
+html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
+
+@media print {
+  #theme-toggle { display: none; }
+}
+
+/* ---------------------------------------------------------------
+   Home page intro: photo left, details right
+   --------------------------------------------------------------- */
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile__photo {
+  flex: 0 0 auto;
+  width: 270px;
+  /* The theme puts `margin: 25px 0` on every img, which would drop the
+     photo below the name it should line up with. */
+  margin: 0;
+  /* The theme frames every image in a chunky 8px accent border, which
+     overwhelms a portrait this small — slim it down. */
+  border-width: 4px;
+  padding: 4px;
+}
+
+.profile__body > :first-child { margin-top: 0; }
+.profile__body > :last-child  { margin-bottom: 0; }
+
+/* The contact line: separated links that wrap neatly. */
+.profile__body .contact {
+  margin-top: 0.5rem;
+  line-height: 1.9;
+}
+
+/* Name sits tight above the position line. */
+.profile__body h3 {
+  margin: 0 0 0.35rem 0;
+}
+
+/* Stack the photo above the details on narrow screens. */
+@media (max-width: 620px) {
+  .profile {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .profile__photo {
+    width: 140px;
+  }
+}

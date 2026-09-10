@@ -1,0 +1,36 @@
+{{/* Light/dark toggle. Lives here rather than in header.html so that
+     no theme file is forked and `git submodule update` stays clean. */}}
+<button id="theme-toggle" type="button" aria-label="Switch colour scheme">
+  <span class="icon-dark" aria-hidden="true">&#9788;</span>
+  <span class="icon-light" aria-hidden="true">&#9790;</span>
+</button>
+<script>
+  (function () {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    var root = document.documentElement;
+
+    function label() {
+      var now = root.getAttribute("data-theme") === "light" ? "light" : "dark";
+      btn.setAttribute(
+        "title",
+        now === "light" ? "Switch to dark mode" : "Switch to light mode"
+      );
+    }
+
+    btn.addEventListener("click", function () {
+      var next =
+        root.getAttribute("data-theme") === "light" ? "dark" : "light";
+      root.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch (e) {
+        /* private browsing: the choice just won't persist */
+      }
+      label();
+    });
+
+    label();
+  })();
+</script>
