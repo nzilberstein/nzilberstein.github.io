@@ -1,14 +1,20 @@
 {{/* Renders data/publications.json, which scripts/bib2json.py generates
      from publications.bib. Usage:
 
-       {{< publications >}}                                   all, grouped by year
-       {{< publications filter="highlighted" >}}              only tagged entries
-       {{< publications filter="highlighted" years="false" >}} no year headings
+       {{< publications >}}                       all, grouped by year
+       {{< publications filter="highlighted" >}}  only tagged entries
+       {{< publications years="false" >}}         no year headings
+       {{< publications images="true" >}}         show teaser thumbnails
+       {{< publications exclude="preprint" >}}    omit entries with a keyword
+
+     Thumbnails are off by default, so the full list stays text-only.
 
      Entries are already sorted newest-first by the converter, so the
      flat list keeps that order without the headings. */}}
 {{ $filter := lower (.Get "filter" | default "") }}
+{{ $exclude := lower (.Get "exclude" | default "") }}
 {{ $showYears := ne (.Get "years" | default "true") "false" }}
+{{ $showImages := eq (.Get "images" | default "false") "true" }}
 {{ $me := site.Params.authorName | default "" }}
 
 <div class="pubs">
@@ -17,7 +23,9 @@
       {{ $year := .year }}
       {{ $items := slice }}
       {{ range .items }}
-        {{ if or (eq $filter "") (in .keywords $filter) }}
+        {{ $keep := or (eq $filter "") (in .keywords $filter) }}
+        {{ if and $keep $exclude }}{{ $keep = not (in .keywords $exclude) }}{{ end }}
+        {{ if $keep }}
           {{ $items = $items | append . }}
         {{ end }}
       {{ end }}
@@ -25,7 +33,7 @@
         <h3 class="pubs__year">{{ $year }}</h3>
         <ul class="pubs__list">
           {{ range . }}
-            {{ partial "pub-item.html" (dict "pub" . "me" $me) }}
+            {{ partial "pub-item.html" (dict "pub" . "me" $me "images" $showImages) }}
           {{ end }}
         </ul>
       {{ end }}
@@ -34,7 +42,9 @@
     {{ $all := slice }}
     {{ range hugo.Data.publications }}
       {{ range .items }}
-        {{ if or (eq $filter "") (in .keywords $filter) }}
+        {{ $keep := or (eq $filter "") (in .keywords $filter) }}
+        {{ if and $keep $exclude }}{{ $keep = not (in .keywords $exclude) }}{{ end }}
+        {{ if $keep }}
           {{ $all = $all | append . }}
         {{ end }}
       {{ end }}
@@ -42,7 +52,7 @@
     {{ with $all }}
       <ul class="pubs__list">
         {{ range . }}
-          {{ partial "pub-item.html" (dict "pub" . "me" $me) }}
+          {{ partial "pub-item.html" (dict "pub" . "me" $me "images" $showImages) }}
         {{ end }}
       </ul>
     {{ end }}

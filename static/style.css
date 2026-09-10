@@ -151,7 +151,7 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
 
 .pub__thumb {
   flex: 0 0 auto;
-  width: 150px;
+  width: 300px;
   /* Same two theme defaults the portrait has to override: a chunky 8px
      accent border, and `margin: 25px 0` on every img. */
   border-width: 3px;
@@ -164,4 +164,64 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
     flex-direction: column;
     gap: 0.5rem;
   }
+}
+
+/* Inline accent highlight, via the {{< hl >}} shortcode. */
+.hl {
+  color: var(--accent);
+}
+
+/* ---------------------------------------------------------------
+   Publication matrix: applications x methodological categories
+   --------------------------------------------------------------- */
+.pubmatrix {
+  /* Tables are the one thing allowed to scroll sideways on a phone. */
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.pubmatrix table {
+  margin: 0;
+  min-width: 640px;
+}
+
+.pubmatrix th {
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Row labels are short; never break them mid-word. */
+.pubmatrix tbody th {
+  white-space: nowrap;
+}
+
+.pubmatrix td {
+  vertical-align: top;
+}
+
+.pubmatrix__corner {
+  border: none;
+}
+
+.pubmatrix__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pubmatrix__list li + li {
+  margin-top: 0.6rem;
+}
+
+.pubmatrix__year {
+  opacity: 0.7;
+}
+
+.pubmatrix__empty {
+  opacity: 0.5;
+}
+
+.pubmatrix th {
+  text-transform: none;
+  letter-spacing: normal;
 }

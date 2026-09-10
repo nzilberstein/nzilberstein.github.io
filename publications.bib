@@ -1,30 +1,259 @@
-% Your publications live here. Paste entries straight from Google Scholar
-% ("Cite" -> BibTeX) or your reference manager -- no reformatting needed.
-%
-% Add `keywords = {highlighted}` to any entry you want on the home page.
-% Optional extras this site understands: url, doi, code, note,
-%   image (a teaser thumbnail, e.g. image = {/pubs/my-paper.png}), image_alt.
-%
-% Replace the examples below with your own.
+@string{TAC = "IEEE Trans. Auto. Control"}
+@string{TNN = "IEEE Trans. Neural Netw."}
+@string{JSAC = "IEEE J. Sel. Areas Commun."}
+@string{TSP = "IEEE Trans. Signal Process."}
+@string{TSIPN = "IEEE Trans. Signal and Info. Process. over Networks"}
+@string{CommMag = "IEEE Commun. Mag."}
+@string{TIT = "IEEE Trans. Inf. Theory"}
+@string{JSTSP = "IEEE J. Sel. Topics Signal Process."}
+@string{JSAIT = "IEEE J.Sel. Areas Inf. Theory."} 
+@string{TWC = "IEEE Trans. Wireless Commun."}
+@string{TCOM = "IEEE Trans. Commun."}
+@string{PIEEE = "Proc. IEEE"}
+@string{TVT = "IEEE Trans. Veh. Technol."}
+@string{TAE = "IEEE Trans. Aero. and Electr. Syst."}
+@string{VTM = "IEEE Veh. Technol. Mag."}
+@string{SPMag = "IEEE Signal Process. Mag."}
+@string{TNETW = "IEEE/ACM Trans. Netw."}
+@string{ICASSP = "IEEE Intl. Conf. Acoust., Speech and Signal Process. (ICASSP)"}
+@string{EUSIPCO = "European Signal Process. Conf. (EUSIPCO)"}
+@string{SPL = "IEEE Signal Process. Lett."}
+@string{GLOBALSIP ="IEEE Global Conf. Signal and Info. Process. (GlobalSIP)"}
+@string{ISIT = "IEEE Intl. Symp. on Info. Theory (ISIT)"}
+@string{SPAWC = "IEEE Intl. Workshop on Signal Process. Adv. in Wireless Commun. (SPAWC)"}
+@string{NIPS = "Advances in Neural Inf. Process. Syst. (NIPS)"}
+@string{ICLR = "Intl. Conf. Learn. Repr. (ICLR)"}
+@string{ICML = "Intl. Conf. on Machine Learning (ICML)"}
+@string{ICCV = "Proceedings of the IEEE/CVF Int. Conf. Comput. Vis. (ICCV)"}
+@string{CVPR = "Proceedings of the IEEE/CVF Int. Conf. Comput. Vis. Pattern Recogn. (CVPR)"}
+@string{JMLR = "J. Mach. Learn. Res."}
+@string{PAMI = "IEEE Trans. Pattern Anal. Mach. Intell."}
+@string{ECCV = " European Conf. Comp. Vision (ECCV)"}
+@string{AISTATS = "Intl. Conf. on Artif. Intell. and Stat. (AISTATS)"}
 
-@article{example2026diffusion,
-  title     = {An Example Paper Title with an {MRI} Acronym},
-  author    = {Zilberstein, Nicolas and Bouman, Katherine L.},
-  journal   = {Journal of Example Research},
-  year      = {2026},
+@INPROCEEDINGS{zilberstein_ICASSP2023,
+  author={Zilberstein, Nicolas and Dick, Chris and Doost-Mohammady, Rahman and Sabharwal, Ashutosh and Segarra, Santiago},
+  booktitle=ICASSP, 
+  title={Accelerated massive {MIMO} detector based on annealed underdamped {L}angevin dynamics}, 
+  year={2023}
+}
+
+@INPROCEEDINGS{zilberstein_EUSIPCO2021,
+  author={Zilberstein, Nicolas and Dick, Chris and Doost-Mohammady, Rahman and Sabharwal, Ashutosh and Segarra, Santiago},
+  booktitle=EUSIPCO, 
+  title={Detection by Sampling: Massive {MIMO} Detector based on {L}angevin Dynamics}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1651-1655},
+  doi={10.23919/EUSIPCO55093.2022.9909638}}
+
+@inproceedings{zilberstein_EUSIPCO2021_robust,
+  title={Robust {MIMO} detection using hypernetworks with learned regularizers},
+  author={Zilberstein, Nicolas and Dick, Chris and Doost-Mohammady, Rahman and Sabharwal, Ashutosh and Segarra, Santiago},
+  booktitle=EUSIPCO,
+  pages={1626--1630},
+  year={2022},
+  organization={IEEE}
+}
+
+@inproceedings{zilberstein2018particle,
+  title={Particle filter with unknown noise statistics and with prior knowledge},
+  author={Zilberstein, Nicolas and Cernuschi-Frias, Bruno},
+  booktitle={2018 Argentine Conference on Automatic Control (AADECA)},
+  pages={1--6},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{gama2022unrolling,
+  title={Unrolling Particles: Unsupervised Learning of Sampling Distributions},
+  author={Gama, Fernando and Zilberstein, Nicolas and Baraniuk, Richard G and Segarra, Santiago},
+  booktitle=ICASSP,
+  pages={5498--5502},
+  year={2022},
+  organization={IEEE}
+}
+
+@inproceedings{asilomar2023,
+  title={State and Dynamics Estimation with the {K}alman--{L}angevin filter},
+  author={Sevilla*, Martin and Zilberstein*, Nicolas and Cox, Benjamin and Perez-Vieites, Sara and Elvira, Victor and Segarra, Santiago},
+  booktitle={Asilomar Conf. Signals, Syst. and Comp.},
+  pages={53--57},
+  year={2023},
+  organization={IEEE}
+}
+
+@article{zilberstein_ICASSP2024,
+  title={Joint channel estimation and data detection in massive {MIMO} systems based on diffusion models},
+  author={Zilberstein, Nicolas and Swami, Ananthram and Segarra, Santiago},
+  journal=ICASSP,
+  year = {2024},
+  keywords  = {train, wireless}
+}
+
+@article{cox_ICASSP2024,
+  title={End-to-end learning of {G}AUSSIAN MIXTURE PROPOSALS USING DIFFERENTIABLE PARTICLE FILTERS AND NEURAL NETWORKS},
+  author={Cox, Benjamin and Perez-Vieites, Sara and Zilberstein, Nicolas and Sevilla, Martin and Segarra, Santiago and Elvira, Victor},
+  journal=ICASSP,
+  year = {2024}
+}
+
+@article{zilberstein2023solving,
+  title={Solving Linear Inverse Problems using Higher-Order Annealed {L}angevin Diffusion},
+  author={Zilberstein, Nicolas and Sabharwal, Ashutosh and Segarra, Santiago},
+  journal=TSP,
+  year={2024}
+}
+
+@article{zilberstein2022annealed,
+  title={Annealed {L}angevin dynamics for massive {MIMO} detection},
+  author={Zilberstein, Nicolas and Dick, Chris and Doost-Mohammady, Rahman and Sabharwal, Ashutosh and Segarra, Santiago},
+  journal=TWC,
+  year={2022},
+  publisher={IEEE},
+  keywords  = {pretrain, wireless}
+}
+
+@article{gama2023unsupervised,
+  title={Unsupervised learning of sampling distributions for particle filters},
+  author={Gama, Fernando and Zilberstein, Nicolas and Sevilla, Martin and Baraniuk, Richard G and Segarra, Santiago},
+  journal=TSP,
+  year={2023},
+  publisher={IEEE}
+}
+
+@article{zilberstein2021bcs,
+  title={A {BCS} microwave imaging algorithm for object detection and shape reconstruction tested with experimental data},
+  author={Zilberstein, Nicolas and Maya, Juan Augusto and Altieri, Andres},
+  journal={Electr. Lett.},
+  volume={57},
+  number={2},
+  pages={88--91},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+
+@article{zilberstein2024repulsive,
+  title={Repulsive Latent Score Distillation for Solving Inverse Problems},
+  short={Repulsive Latent Score Distillation},
+  author={Zilberstein, Nicolas and Mardani, Morteza and Segarra, Santiago},
+  journal=ICLR,
+  year={2025},
+  url       = {https://example.org/paper},
+  code      = {https://github.com/nzilberstein/example},
+  image     = {/scheme_main.png},
+  keywords  = {highlighted, pretrain, imaging}
+}
+
+@article{zilberstein2024topological,
+  title={Topology Preserving Regularization for Independent Training of Inter-operable Models},
+  author={Zilberstein, Nicolas and Malhotra, Akshay and Deenoo, Yugeswar and Hamidi-Rad, Shahab},
+  journal={NeurIPS workshop UniReps},
+  year={2024}
+}
+
+@INPROCEEDINGS{zilberstein_GSPW,
+  author={Zilberstein, Nicolas and Dick, Chris and Doost-Mohammady, Rahman and Sabharwal, Ashutosh and Segarra, Santiago},
+  booktitle={Graph Signal Processing Workshop}, 
+  title={Accelerated massive {MIMO} detector based on annealed underdamped {L}angevin dynamics}, 
+  year={2023}
+}
+
+@article{aligraphon,
+  title={Scalable Implicit Graphon Learning},
+  author={Azizpour, Ali and Zilberstein, Nicolas and Segarra, Santiago},
+  journal=AISTATS,
+year={2025},
+keywords  = {train, graph}
+}
+
+@article{aligraphon2,
+  title={Model-Driven Graph Contrastive Learning},
+  author={Azizpour, Ali and Zilberstein, Nicolas and Segarra, Santiago},
+  journal={arXiv preprint arXiv:2506.06212},
+year={2025},
+  keywords={preprint}
+}
+
+@article{zilbersteinjoint,
+  title={Blind data detection in massive MIMO systems based on diffusion models},
+ author={Zilberstein, Nicolas and Swami, Ananthram and Segarra, Santiago},
+year={2025}
+}
+
+@article{tenoriograph,
+  title={Graph Guided Diffusion: Unified Guidance for
+Conditional Graph Generation},
+ author={Tenorio, Victor M. and Zilberstein, Nicolas and Segarra, Santiago and Marques, Antonio G.},
+journal={NeurIPS workshop NPGML},
+year={2025}
+}
+
+@article{tenoriograph2,
+  title={Graph Guided Diffusion: Unified Guidance for
+Conditional Graph Generation},
+ author={Tenorio, Victor M. and Zilberstein, Nicolas and Segarra, Santiago and Marques, Antonio G.},
+  journal={arXiv preprint arXiv:2505.19685},
+year={2025},
+keywords  = {pretrain, graph, preprint}
+}
+
+
+@article{pifm,
+  title={Prior-informed Flow Matching for Graph Reconstruction},
+ author={Chen, Haoming and Zilberstein, Nicolas and Segarra, Santiago},
+  journal={ICML workshop SPIGM},
+year={2026},
+  url       = {https://example.org/paper},
+  code      = {https://github.com/nzilberstein/example},
+  keywords  = {train, graph}
+}
+
+@INPROCEEDINGS{safesampling,
+  author={Zilberstein, Nicolas and Segarra, Santiago and Chamon, Luiz},
+  booktitle={Asilomar Conf. Signals, Syst. and Comp.}, 
+  title={Sampling with Shielded {L}angevin {M}onte {C}arlo Using Navigation Potentials}, 
+  short={Sampling with navigation potentials},
+  year={2025},
+  organization={IEEE},
   url       = {https://example.org/paper},
   code      = {https://github.com/nzilberstein/example},
   image     = {/image_scholar.jpg},
-  keywords  = {highlighted}
+  keywords  = {pretrain, imaging}
 }
+
+@article{flatiron,
+    title={Normalized Energy Models for Linear Inverse Problems},
+    short={Normalized Energy Models},
+    author={Zilberstein, Nicolas and Segarra, Santiago and Simoncelli, Eero and Guth, Florentin},
+    journal=ICML,
+    year = {2026},
+    url       = {https://example.org/paper},
+    code      = {https://github.com/nzilberstein/example},
+    image     = {/scheme_energy.png},
+    keywords  = {highlighted, train, imaging}
+}
+
+@article{flow_maps,
+  title={Flow Map Denoisers: Traversing the Distortion-Perception Plane for Inverse Problems},
+  short={Flow Map Denoisers},
+  author={Zilberstein, Nicolas and Mardani, Morteza and Segarra, Santiago},
+  journal={ICML workshop SPIGM},
+  year = {2026},
+  url       = {https://example.org/paper},
+  code      = {https://github.com/nzilberstein/example},
+  image     = {/flow_maps2.png},
+  keywords  = {highlighted, train, imaging}
+  }
+
 
 @inproceedings{example2025sampling,
   title     = {Another Example Paper},
   author    = {Zilberstein, Nicolas and Segarra, Santiago},
   booktitle = {Proceedings of the Example Conference (EXCONF)},
   year      = {2025},
-  url       = {https://example.org/paper2},
-  keywords  = {highlighted}
+  url       = {https://example.org/paper2}
 }
 
 @phdthesis{zilberstein2025thesis,

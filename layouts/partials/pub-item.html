@@ -1,9 +1,10 @@
 {{/* One publication, as a single flowing line. Called with:
-       dict "pub" <entry> "me" <author name to bold>
-     If the entry has an `image`, it renders as a thumbnail to the left
-     with the text beside it. */}}
+       dict "pub" <entry> "me" <author name to bold> "images" <bool>
+     A teaser thumbnail is drawn to the left of the text only when the
+     caller asks for images AND the entry has one. */}}
 {{ $pub := .pub }}
 {{ $me := .me }}
+{{ $images := .images | default false }}
 {{ $parts := slice }}
 
 {{/* Title, bold and linked when there is a URL. Add a full stop only if
@@ -44,9 +45,9 @@
 {{ end }}
 
 {{ $text := delimit $parts " " }}
-{{ with $pub.image }}
+{{ if and $images $pub.image }}
   <li class="pub pub--figure">
-    <img class="pub__thumb" src="{{ . | safeURL }}" alt="{{ $pub.image_alt | default $pub.title | plainify }}" />
+    <img class="pub__thumb" src="{{ $pub.image | safeURL }}" alt="{{ $pub.image_alt | default $pub.title | plainify }}" />
     <div class="pub__text">{{ $text | safeHTML }}</div>
   </li>
 {{ else }}

@@ -1,0 +1,89 @@
+{{/* A matrix of publications: applications down the side, methodological
+     categories across the top. Each cell lists the papers carrying both
+     keywords, as compact one-line links.
+
+       {{< pubmatrix
+            cols="pretrain: Leveraging pre-trained models; train: Training new models"
+            rows="imaging: Imaging; graph: Graphs; wireless: Wireless" >}}
+
+     Entries are matched on the `keywords` field in publications.bib, so a
+     paper needs one column keyword and one row keyword to appear, e.g.
+     keywords = {pretrain, imaging}. Pairs are `key: Label`, separated by
+     semicolons so that labels may contain commas. */}}
+
+{{ $cols := slice }}
+{{ range split (.Get "cols" | default "") ";" }}
+  {{ $bits := split . ":" }}
+  {{ if ge (len $bits) 2 }}
+    {{ $cols = $cols | append (dict
+        "key"   (lower (trim (index $bits 0) " "))
+        "label" (trim (delimit (after 1 $bits) ":") " ")) }}
+  {{ end }}
+{{ end }}
+
+{{ $rows := slice }}
+{{ range split (.Get "rows" | default "") ";" }}
+  {{ $bits := split . ":" }}
+  {{ if ge (len $bits) 2 }}
+    {{ $rows = $rows | append (dict
+        "key"   (lower (trim (index $bits 0) " "))
+        "label" (trim (delimit (after 1 $bits) ":") " ")) }}
+  {{ end }}
+{{ end }}
+
+{{/* Flatten the year-grouped data into one list, newest first. */}}
+{{ $all := slice }}
+{{ range hugo.Data.publications }}
+  {{ range .items }}
+    {{ $all = $all | append . }}
+  {{ end }}
+{{ end }}
+
+{{ if and $cols $rows }}
+<div class="pubmatrix">
+  <table>
+    <thead>
+      <tr>
+        <td class="pubmatrix__corner"></td>
+        {{ range $cols }}<th scope="col">{{ .label }}</th>{{ end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $row := $rows }}
+        <tr>
+          <th scope="row">{{ $row.label }}</th>
+          {{ range $col := $cols }}
+            {{ $cell := slice }}
+            {{ range $all }}
+              {{ if and (in .keywords $row.key) (in .keywords $col.key) }}
+                {{ $cell = $cell | append . }}
+              {{ end }}
+            {{ end }}
+            <td>
+              {{ if $cell }}
+                <ul class="pubmatrix__list">
+                  {{ range $cell }}
+                    <li>
+                      {{/* A `short` label from the .bib wins over the full
+                           title here; /publications always shows the title. */}}
+                      {{ $label := .short | default .title }}
+                      {{ if .url }}
+                        <a href="{{ .url }}">{{ $label }}</a>
+                      {{ else }}
+                        {{ $label }}
+                      {{ end }}
+                      {{ with .year }}<span class="pubmatrix__year">{{ . }}</span>{{ end }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ else }}
+                <span class="pubmatrix__empty">&mdash;</span>
+              {{ end }}
+            </td>
+          {{ end }}
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ end }}

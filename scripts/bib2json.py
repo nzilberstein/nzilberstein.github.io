@@ -135,6 +135,9 @@ def main():
             "doi": f.get("doi", ""),
             "code": f.get("code", ""),
             "note": f.get("note", ""),
+            # Optional short label used in the matrix instead of the
+            # full title, e.g. short = {Flow Map Denoisers}
+            "short": f.get("short") or f.get("shortname", ""),
             # Optional teaser image, e.g. image = {/pubs/my-paper.png}
             "image": f.get("image", ""),
             "image_alt": f.get("image_alt", ""),

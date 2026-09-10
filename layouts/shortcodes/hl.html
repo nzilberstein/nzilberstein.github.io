@@ -1,0 +1,5 @@
+{{/* Highlight inline text in the accent colour:
+       {{< hl >}}Caltech{{< /hl >}}
+     Works inside other shortcodes (e.g. the profile block) because Hugo
+     expands nested shortcodes before the inner content is rendered. */}}
+<span class="hl">{{ .Inner }}</span>

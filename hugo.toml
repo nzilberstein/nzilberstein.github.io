@@ -29,8 +29,13 @@ theme = "terminal"
       [[languages.en.menu.main]]
         identifier = "cv"
         name = "CV"
-        url = "/cv.pdf"
+        url = "/cv"
       [[languages.en.menu.main]]
         identifier = "publications"
         name = "Publications"
         url = "/publications"
+      [[languages.en.menu.main]]
+        identifier = "teaching"
+        name = "Teaching"
+        url = "/teaching"
+

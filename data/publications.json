@@ -3,22 +3,72 @@
     "year": "2026",
     "items": [
       {
-        "key": "example2026diffusion",
-        "title": "An Example Paper Title with an MRI Acronym",
+        "key": "pifm",
+        "title": "Prior-informed Flow Matching for Graph Reconstruction",
         "authors": [
+          "Haoming Chen",
           "Nicolas Zilberstein",
-          "Katherine L. Bouman"
+          "Santiago Segarra"
         ],
         "year": "2026",
-        "venue": "Journal of Example Research",
+        "venue": "ICML workshop SPIGM",
         "url": "https://example.org/paper",
         "doi": "",
         "code": "https://github.com/nzilberstein/example",
         "note": "",
-        "image": "/image_scholar.jpg",
+        "short": "",
+        "image": "",
         "image_alt": "",
         "keywords": [
-          "highlighted"
+          "train",
+          "graph"
+        ]
+      },
+      {
+        "key": "flatiron",
+        "title": "Normalized Energy Models for Linear Inverse Problems",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Santiago Segarra",
+          "Eero Simoncelli",
+          "Florentin Guth"
+        ],
+        "year": "2026",
+        "venue": "ICML",
+        "url": "https://example.org/paper",
+        "doi": "",
+        "code": "https://github.com/nzilberstein/example",
+        "note": "",
+        "short": "Normalized Energy Models",
+        "image": "/scheme_energy.png",
+        "image_alt": "",
+        "keywords": [
+          "highlighted",
+          "train",
+          "imaging"
+        ]
+      },
+      {
+        "key": "flow_maps",
+        "title": "Flow Map Denoisers: Traversing the Distortion-Perception Plane for Inverse Problems",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Morteza Mardani",
+          "Santiago Segarra"
+        ],
+        "year": "2026",
+        "venue": "ICML workshop SPIGM",
+        "url": "https://example.org/paper",
+        "doi": "",
+        "code": "https://github.com/nzilberstein/example",
+        "note": "",
+        "short": "Flow Map Denoisers",
+        "image": "/flow_maps2.png",
+        "image_alt": "",
+        "keywords": [
+          "highlighted",
+          "train",
+          "imaging"
         ]
       }
     ]
@@ -26,6 +76,157 @@
   {
     "year": "2025",
     "items": [
+      {
+        "key": "zilberstein2024repulsive",
+        "title": "Repulsive Latent Score Distillation for Solving Inverse Problems",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Morteza Mardani",
+          "Santiago Segarra"
+        ],
+        "year": "2025",
+        "venue": "ICLR",
+        "url": "https://example.org/paper",
+        "doi": "",
+        "code": "https://github.com/nzilberstein/example",
+        "note": "",
+        "short": "Repulsive Latent Score Distillation",
+        "image": "/scheme_main.png",
+        "image_alt": "",
+        "keywords": [
+          "highlighted",
+          "pretrain",
+          "imaging"
+        ]
+      },
+      {
+        "key": "aligraphon",
+        "title": "Scalable Implicit Graphon Learning",
+        "authors": [
+          "Ali Azizpour",
+          "Nicolas Zilberstein",
+          "Santiago Segarra"
+        ],
+        "year": "2025",
+        "venue": "AISTATS",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": [
+          "train",
+          "graph"
+        ]
+      },
+      {
+        "key": "aligraphon2",
+        "title": "Model-Driven Graph Contrastive Learning",
+        "authors": [
+          "Ali Azizpour",
+          "Nicolas Zilberstein",
+          "Santiago Segarra"
+        ],
+        "year": "2025",
+        "venue": "arXiv preprint arXiv:2506.06212",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": [
+          "preprint"
+        ]
+      },
+      {
+        "key": "zilbersteinjoint",
+        "title": "Blind data detection in massive MIMO systems based on diffusion models",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Ananthram Swami",
+          "Santiago Segarra"
+        ],
+        "year": "2025",
+        "venue": "",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "tenoriograph",
+        "title": "Graph Guided Diffusion: Unified Guidance for Conditional Graph Generation",
+        "authors": [
+          "Victor M. Tenorio",
+          "Nicolas Zilberstein",
+          "Santiago Segarra",
+          "Antonio G. Marques"
+        ],
+        "year": "2025",
+        "venue": "NeurIPS workshop NPGML",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "tenoriograph2",
+        "title": "Graph Guided Diffusion: Unified Guidance for Conditional Graph Generation",
+        "authors": [
+          "Victor M. Tenorio",
+          "Nicolas Zilberstein",
+          "Santiago Segarra",
+          "Antonio G. Marques"
+        ],
+        "year": "2025",
+        "venue": "arXiv preprint arXiv:2505.19685",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": [
+          "pretrain",
+          "graph",
+          "preprint"
+        ]
+      },
+      {
+        "key": "safesampling",
+        "title": "Sampling with Shielded Langevin Monte Carlo Using Navigation Potentials",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Santiago Segarra",
+          "Luiz Chamon"
+        ],
+        "year": "2025",
+        "venue": "Asilomar Conf. Signals, Syst. and Comp.",
+        "url": "https://example.org/paper",
+        "doi": "",
+        "code": "https://github.com/nzilberstein/example",
+        "note": "",
+        "short": "Sampling with navigation potentials",
+        "image": "/image_scholar.jpg",
+        "image_alt": "",
+        "keywords": [
+          "pretrain",
+          "imaging"
+        ]
+      },
       {
         "key": "example2025sampling",
         "title": "Another Example Paper",
@@ -39,11 +240,10 @@
         "doi": "",
         "code": "",
         "note": "",
+        "short": "",
         "image": "",
         "image_alt": "",
-        "keywords": [
-          "highlighted"
-        ]
+        "keywords": []
       },
       {
         "key": "zilberstein2025thesis",
@@ -57,6 +257,323 @@
         "doi": "",
         "code": "",
         "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "items": [
+      {
+        "key": "zilberstein_ICASSP2024",
+        "title": "Joint channel estimation and data detection in massive MIMO systems based on diffusion models",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Ananthram Swami",
+          "Santiago Segarra"
+        ],
+        "year": "2024",
+        "venue": "ICASSP",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": [
+          "train",
+          "wireless"
+        ]
+      },
+      {
+        "key": "cox_ICASSP2024",
+        "title": "End-to-end learning of GAUSSIAN MIXTURE PROPOSALS USING DIFFERENTIABLE PARTICLE FILTERS AND NEURAL NETWORKS",
+        "authors": [
+          "Benjamin Cox",
+          "Sara Perez-Vieites",
+          "Nicolas Zilberstein",
+          "Martin Sevilla",
+          "Santiago Segarra",
+          "Victor Elvira"
+        ],
+        "year": "2024",
+        "venue": "ICASSP",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "zilberstein2023solving",
+        "title": "Solving Linear Inverse Problems using Higher-Order Annealed Langevin Diffusion",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Ashutosh Sabharwal",
+          "Santiago Segarra"
+        ],
+        "year": "2024",
+        "venue": "TSP",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "zilberstein2024topological",
+        "title": "Topology Preserving Regularization for Independent Training of Inter-operable Models",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Akshay Malhotra",
+          "Yugeswar Deenoo",
+          "Shahab Hamidi-Rad"
+        ],
+        "year": "2024",
+        "venue": "NeurIPS workshop UniReps",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "items": [
+      {
+        "key": "zilberstein_ICASSP2023",
+        "title": "Accelerated massive MIMO detector based on annealed underdamped Langevin dynamics",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Chris Dick",
+          "Rahman Doost-Mohammady",
+          "Ashutosh Sabharwal",
+          "Santiago Segarra"
+        ],
+        "year": "2023",
+        "venue": "ICASSP",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "asilomar2023",
+        "title": "State and Dynamics Estimation with the Kalman\u2013Langevin filter",
+        "authors": [
+          "Martin Sevilla*",
+          "Nicolas Zilberstein*",
+          "Benjamin Cox",
+          "Sara Perez-Vieites",
+          "Victor Elvira",
+          "Santiago Segarra"
+        ],
+        "year": "2023",
+        "venue": "Asilomar Conf. Signals, Syst. and Comp.",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "gama2023unsupervised",
+        "title": "Unsupervised learning of sampling distributions for particle filters",
+        "authors": [
+          "Fernando Gama",
+          "Nicolas Zilberstein",
+          "Martin Sevilla",
+          "Richard G Baraniuk",
+          "Santiago Segarra"
+        ],
+        "year": "2023",
+        "venue": "TSP",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "zilberstein_GSPW",
+        "title": "Accelerated massive MIMO detector based on annealed underdamped Langevin dynamics",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Chris Dick",
+          "Rahman Doost-Mohammady",
+          "Ashutosh Sabharwal",
+          "Santiago Segarra"
+        ],
+        "year": "2023",
+        "venue": "Graph Signal Processing Workshop",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "items": [
+      {
+        "key": "zilberstein_EUSIPCO2021",
+        "title": "Detection by Sampling: Massive MIMO Detector based on Langevin Dynamics",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Chris Dick",
+          "Rahman Doost-Mohammady",
+          "Ashutosh Sabharwal",
+          "Santiago Segarra"
+        ],
+        "year": "2022",
+        "venue": "EUSIPCO",
+        "url": "",
+        "doi": "10.23919/EUSIPCO55093.2022.9909638",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "zilberstein_EUSIPCO2021_robust",
+        "title": "Robust MIMO detection using hypernetworks with learned regularizers",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Chris Dick",
+          "Rahman Doost-Mohammady",
+          "Ashutosh Sabharwal",
+          "Santiago Segarra"
+        ],
+        "year": "2022",
+        "venue": "EUSIPCO",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "gama2022unrolling",
+        "title": "Unrolling Particles: Unsupervised Learning of Sampling Distributions",
+        "authors": [
+          "Fernando Gama",
+          "Nicolas Zilberstein",
+          "Richard G Baraniuk",
+          "Santiago Segarra"
+        ],
+        "year": "2022",
+        "venue": "ICASSP",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      },
+      {
+        "key": "zilberstein2022annealed",
+        "title": "Annealed Langevin dynamics for massive MIMO detection",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Chris Dick",
+          "Rahman Doost-Mohammady",
+          "Ashutosh Sabharwal",
+          "Santiago Segarra"
+        ],
+        "year": "2022",
+        "venue": "TWC",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": [
+          "pretrain",
+          "wireless"
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "items": [
+      {
+        "key": "zilberstein2021bcs",
+        "title": "A BCS microwave imaging algorithm for object detection and shape reconstruction tested with experimental data",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Juan Augusto Maya",
+          "Andres Altieri"
+        ],
+        "year": "2021",
+        "venue": "Electr. Lett.",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": []
+      }
+    ]
+  },
+  {
+    "year": "2018",
+    "items": [
+      {
+        "key": "zilberstein2018particle",
+        "title": "Particle filter with unknown noise statistics and with prior knowledge",
+        "authors": [
+          "Nicolas Zilberstein",
+          "Bruno Cernuschi-Frias"
+        ],
+        "year": "2018",
+        "venue": "2018 Argentine Conference on Automatic Control (AADECA)",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
         "image": "",
         "image_alt": "",
         "keywords": []
