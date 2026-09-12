@@ -226,41 +226,6 @@
           "pretrain",
           "imaging"
         ]
-      },
-      {
-        "key": "example2025sampling",
-        "title": "Another Example Paper",
-        "authors": [
-          "Nicolas Zilberstein",
-          "Santiago Segarra"
-        ],
-        "year": "2025",
-        "venue": "Proceedings of the Example Conference (EXCONF)",
-        "url": "https://example.org/paper2",
-        "doi": "",
-        "code": "",
-        "note": "",
-        "short": "",
-        "image": "",
-        "image_alt": "",
-        "keywords": []
-      },
-      {
-        "key": "zilberstein2025thesis",
-        "title": "An Example PhD Thesis Title",
-        "authors": [
-          "Nicolas Zilberstein"
-        ],
-        "year": "2025",
-        "venue": "PhD thesis, Rice University",
-        "url": "",
-        "doi": "",
-        "code": "",
-        "note": "",
-        "short": "",
-        "image": "",
-        "image_alt": "",
-        "keywords": []
       }
     ]
   },

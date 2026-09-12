@@ -19,7 +19,7 @@ html[data-theme="light"] {
   --foreground: #1a1a1a;
   /* Caltech orange is only ~2.9:1 on white, below the 4.5:1 needed
      for body text, so light mode uses a darkened shade (~5:1). */
-  --accent: #c2410c;
+  --accent: #c24400;   /* Caltech's own darker orange (their --primary) */
 }
 
 /* Dark is the site's default look regardless of the visitor's OS setting;
@@ -83,10 +83,10 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
   /* The theme puts `margin: 25px 0` on every img, which would drop the
      photo below the name it should line up with. */
   margin: 0;
-  /* The theme frames every image in a chunky 8px accent border, which
-     overwhelms a portrait this small — slim it down. */
-  border-width: 4px;
-  padding: 4px;
+  /* The theme frames every image in an 8px accent border; the portrait
+     reads better bare. */
+  border: none;
+  padding: 0;
 }
 
 .profile__body > :first-child { margin-top: 0; }
@@ -312,4 +312,106 @@ code, kbd, pre, pre code, samp {
    measure, so it is narrower than the full window. */
 .container.full {
   max-width: 1000px;
+}
+
+/* =================================================================
+   PROPOSAL: modern refinements.
+   Self-contained -- delete this whole block to restore the look above.
+   ================================================================= */
+
+/* 1. Palette. Warm near-black instead of neutral, a slightly warm
+      off-white, and two new tones: `--muted` for metadata and
+      `--hairline` for borders. `--radius` is a theme variable that
+      rounds images, buttons and inputs everywhere at once. */
+:root,
+html[data-theme="dark"] {
+  --background: #131211;
+  --foreground: #e9e4db;
+  --accent: #ea752c; /*#ff6c0c*/
+  --muted: #9b958c;
+  --hairline: color-mix(in srgb, var(--foreground) 16%, transparent);
+  --radius: 6px;
+}
+
+html[data-theme="light"] {
+  --background: #fbfaf7;
+  --foreground: #1e1b18;
+  --accent: #1aadf1;   /* c24400 Caltech's own darker orange (their --primary) */
+  --muted: #6f6a62;
+  --hairline: color-mix(in srgb, var(--foreground) 14%, transparent);
+}
+
+/* With JavaScript off the init script never runs, so honour the OS
+   setting here too. An explicit dark choice (data-theme="dark") wins. */
+@media (prefers-color-scheme: light) {
+  html:not([data-theme="dark"]) {
+    --background: #fbfaf7;
+    --foreground: #1e1b18;
+    --accent: #2f96fc;   /* c24400 Caltech's own darker orange (their --primary) */
+    --muted: #6f6a62;
+    --hairline: color-mix(in srgb, var(--foreground) 14%, transparent);
+  }
+}
+
+
+/* 3. Links in body text: keep the accent, refine the underline. */
+.content a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.content a:hover {
+  text-decoration-color: var(--accent);
+}
+
+/* 4. Images: no frame, soft corners. */
+.profile__photo,
+.pub__thumb {
+  border: none;
+  padding: 0;
+  border-radius: 8px;
+}
+
+/* 5. Metadata in the muted tone instead of reduced opacity. */
+.pub__authors,
+.pub__venue,
+.pubmatrix__year,
+.pubmatrix__empty {
+  opacity: 1;
+  color: var(--muted);
+}
+
+/* 6. Table: hairline borders instead of 2px solid foreground. */
+.pubmatrix table,
+.pubmatrix th,
+.pubmatrix td {
+  border: 1px solid var(--hairline);
+}
+
+.pubmatrix thead th {
+  font-weight: 600;
+}
+
+.pubmatrix td.pubmatrix__corner {
+  border: none;
+}
+
+/* 7. Theme toggle: lighter frame, muted until hovered. */
+#theme-toggle {
+  border-width: 1px;
+  border-color: var(--hairline);
+  color: var(--muted);
+}
+
+#theme-toggle:hover,
+#theme-toggle:focus-visible {
+  color: var(--background);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* 8. A little more air above section headings. */
+.content h2 {
+  margin-top: 2.5rem;
 }

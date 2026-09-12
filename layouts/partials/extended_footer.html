@@ -19,17 +19,40 @@
       );
     }
 
+    var osQuery = window.matchMedia("(prefers-color-scheme: light)");
+    function osTheme() {
+      return osQuery.matches ? "light" : "dark";
+    }
+
     btn.addEventListener("click", function () {
       var next =
         root.getAttribute("data-theme") === "light" ? "dark" : "light";
       root.setAttribute("data-theme", next);
       try {
-        localStorage.setItem("theme", next);
+        // Toggling back to whatever the OS already says clears the
+        // override, so the site resumes following the visitor's setting.
+        if (next === osTheme()) {
+          localStorage.removeItem("theme");
+        } else {
+          localStorage.setItem("theme", next);
+        }
       } catch (e) {
         /* private browsing: the choice just won't persist */
       }
       label();
     });
+
+    // If the OS setting changes while the page is open and no explicit
+    // choice has been made, follow it live.
+    try {
+      osQuery.addEventListener("change", function () {
+        if (localStorage.getItem("theme")) return;
+        root.setAttribute("data-theme", osTheme());
+        label();
+      });
+    } catch (e) {
+      /* older browsers: no live switching, the next load still follows */
+    }
 
     label();
   })();

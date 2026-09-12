@@ -25,18 +25,18 @@ Before moving to the US, I graduated from [Universidad de Buenos Aires](https://
 
 ## Research interests
 
-My research sits at the intersection of generative modeling, inverse problems, and sampling.
+My research sits at the intersection of generative modeling, inverse problems, and sampling, with a focus on imaging mainly.
 
 Methodologically, I work along two broad categories:
 
 1. Inference-time methods: sampling and optimization algorithms that leverage large generative models as strong priors to steer generation.
 2. Training new models: training or fine-tuning models tailored to a downstream task.
 
-Application side, I work across several data modalities.
+Application side, I work with other data modalities beyond images, including graphs and wireless data.
 
-{{< pubmatrix
+<!-- {{< pubmatrix
      cols="pretrain: Inference-time methods; train: Training new models"
-     rows="imaging: Imaging; graph: Graphs; wireless: Wireless" >}}
+     rows="imaging: Imaging; graph: Graphs; wireless: Wireless" >}} -->
 
 
 ## News

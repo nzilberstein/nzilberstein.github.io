@@ -4,9 +4,17 @@
   (function () {
     try {
       var stored = localStorage.getItem("theme");
-      // Default to dark; only an explicit toggle choice switches to light.
-      if (stored !== "light") stored = "dark";
-      document.documentElement.setAttribute("data-theme", stored);
+      var theme;
+      if (stored === "light" || stored === "dark") {
+        // An explicit choice made with the toggle wins.
+        theme = stored;
+      } else {
+        // Otherwise follow the visitor's OS / browser setting.
+        theme = window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
     } catch (e) {
       document.documentElement.setAttribute("data-theme", "dark");
     }
