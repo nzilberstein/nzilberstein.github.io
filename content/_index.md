@@ -18,18 +18,11 @@ Final-year PhD student @ Rice University
 
 Previously, I received my PhD in Electrical and Computer Engineering at [Rice University](https://eceweb.rice.edu), advised by [Santiago Segarra](https://profiles.rice.edu/faculty/santiago-segarra). During my PhD, I was very fortunate to intern at Google at the Computational Imaging Team (Summer 2026), [Center of Computational Neuroscience at Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) at the [LCV group](https://www.cns.nyu.edu/~lcv/) (Summer 2025) and [InterDigital](https://www.interdigital.com/) at the Wireless lab (Summer 2024).-->
 
-I am a final-year PhD student in Electrical and Computer Engineering at [Rice University](https://eceweb.rice.edu), advised by [Santiago Segarra](https://profiles.rice.edu/faculty/santiago-segarra). 
+I am a final-year PhD student in Electrical and Computer Engineering at [Rice University](https://eceweb.rice.edu), advised by [Santiago Segarra](https://profiles.rice.edu/faculty/santiago-segarra).
 
-My research sits at the intersection of generative modeling, inverse problems, and sampling, with a focus on imaging mainly.
-Methodologically, I work along two broad categories:
-1. Inference-time methods: sampling and optimization algorithms that leverage large generative models as strong priors to steer generation;
-2. Training new models: training or fine-tuning models tailored to a downstream task.
+My research is on generative modeling, inverse problems, and sampling, mostly for imaging. Broadly, it falls into two categories: **inference-time methods**, where I develop sampling and optimization algorithms that use large generative models as priors to steer generation, and **training new models** tailored to a downstream task. Beyond images, I have applied these ideas to graphs and wireless systems.
 
-Application side, I work with other data modalities beyond images, including graphs and wireless data.
-
-
-During my PhD, I did internships at Google at the Computational Imaging Team (Summer 2026), [Center of Computational Neuroscience at Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) at the [LCV group](https://www.cns.nyu.edu/~lcv/) (Summer 2025) and [InterDigital](https://www.interdigital.com/) at the Wireless lab (Summer 2024).
-Before moving to the US, I graduated from [Universidad de Buenos Aires](https://www.fi.uba.ar/) (FIUBA) in 2020 with a degree in Electrical Engineering. I was born in the beautiful city of Buenos Aires, Argentina.
+I have interned at Google (Computational Imaging team, 2026), the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/)'s Center for Computational Neuroscience ([LCV group](https://www.cns.nyu.edu/~lcv/), 2025), and [InterDigital](https://www.interdigital.com/) (2024). Before Rice, I studied Electrical Engineering at the [Universidad de Buenos Aires](https://www.fi.uba.ar/), in my hometown of Buenos Aires, Argentina.
 {{< /profile >}}
 
 <!-- {{< pubmatrix
