@@ -1,12 +1,29 @@
-{{/* Two-column intro: photo on the left, everything you write between the
-     shortcode tags on the right. Inner content is plain Markdown. */}}
+{{/* Two-column intro. Photo on the left; everything you write between the
+     tags is Markdown. A line containing only `<<<` splits it: what comes
+     BEFORE goes under the photo (position, contact links), what comes AFTER
+     goes in the column beside it (about, research). Without the marker,
+     everything goes beside the photo, as before. */}}
+{{ $parts := split .Inner "\n<<<\n" }}
+{{ $under := "" }}
+{{ $beside := index $parts 0 }}
+{{ if gt (len $parts) 1 }}
+  {{ $under = index $parts 0 }}
+  {{ $beside = index $parts 1 }}
+{{ end }}
 <div class="profile">
-  <img
-    class="profile__photo"
-    src="{{ .Get "src" | safeURL }}"
-    {{ with .Get "alt" }}alt="{{ . | plainify }}"{{ end }}
-  />
+  <div class="profile__aside">
+    <img
+      class="profile__photo"
+      src="{{ .Get "src" | safeURL }}"
+      {{ with .Get "alt" }}alt="{{ . | plainify }}"{{ end }}
+    />
+    {{ with $under }}
+      <div class="profile__caption">
+        {{ . | markdownify }}
+      </div>
+    {{ end }}
+  </div>
   <div class="profile__body">
-    {{ .Inner | markdownify }}
+    {{ $beside | markdownify }}
   </div>
 </div>

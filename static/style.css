@@ -77,11 +77,18 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
   margin-bottom: 2rem;
 }
 
+.profile__aside {
+  /* Fixed-width left column: the photo, with position and contact
+     links beneath it. */
+  flex: 0 0 270px;
+  max-width: 100%;
+}
+
 .profile__photo {
-  flex: 0 0 auto;
-  width: 270px;
+  display: block;
+  width: 100%;
   /* The theme puts `margin: 25px 0` on every img, which would drop the
-     photo below the name it should line up with. */
+     photo below the text it should line up with. */
   margin: 0;
   /* The theme frames every image in an 8px accent border; the portrait
      reads better bare. */
@@ -89,7 +96,18 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
   padding: 0;
 }
 
-.profile__body > :first-child { margin-top: 0; }
+.profile__caption {
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.profile__caption > :first-child { margin-top: 0; }
+.profile__caption > :last-child  { margin-bottom: 0; }
+.profile__caption p { margin: 0 0 0.5rem; }
+
+.profile__body { flex: 1 1 0; min-width: 0; }
+.profile__body > :first-child { margin-top: 0 !important; }
 .profile__body > :last-child  { margin-bottom: 0; }
 
 /* The contact line: separated links that wrap neatly. */
@@ -109,8 +127,12 @@ html[data-theme="light"] #theme-toggle .icon-dark  { display: none; }
     flex-direction: column;
     gap: 1rem;
   }
+  .profile__aside {
+    flex-basis: auto;
+    width: 100%;
+  }
   .profile__photo {
-    width: 140px;
+    width: 160px;
   }
 }
 
@@ -325,9 +347,9 @@ code, kbd, pre, pre code, samp {
       rounds images, buttons and inputs everywhere at once. */
 :root,
 html[data-theme="dark"] {
-  --background: #131211;
+  --background: #2a2525;
   --foreground: #e9e4db;
-  --accent: #ea752c; /*#ff6c0c*/
+  --accent: #1aadf1; /*#ff6c0c*/
   --muted: #9b958c;
   --hairline: color-mix(in srgb, var(--foreground) 16%, transparent);
   --radius: 6px;
@@ -345,7 +367,7 @@ html[data-theme="light"] {
    setting here too. An explicit dark choice (data-theme="dark") wins. */
 @media (prefers-color-scheme: light) {
   html:not([data-theme="dark"]) {
-    --background: #fbfaf7;
+    --background: #ffffff;
     --foreground: #1e1b18;
     --accent: #2f96fc;   /* c24400 Caltech's own darker orange (their --primary) */
     --muted: #6f6a62;
