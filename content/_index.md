@@ -4,7 +4,7 @@ title: "Welcome"
 
 {{< profile src="/image_scholar.jpg" alt="Nicolas Zilberstein" >}}
 <!-- Postdoctoral researcher @ Caltech -->
-Final-year PhD student @ Rice University
+PhD student @ Rice University
 
 [nzilberstein@rice.edu](mailto:nzilberstein@rice.edu) ·
 [Google Scholar](https://scholar.google.com/citations?user=nXRpGgkAAAAJ&hl=en&authuser=1) ·

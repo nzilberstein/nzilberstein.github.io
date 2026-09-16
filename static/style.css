@@ -437,3 +437,31 @@ html[data-theme="light"] {
 .content h2 {
   margin-top: 2.5rem;
 }
+
+/* ---------------------------------------------------------------
+   Entry spacing on single pages (CV, Teaching). Entries are a bold
+   header line followed by a bullet list; the theme's 25px margins on
+   both p and ul make each entry float apart from its own bullets.
+   Scoped to .post-content, so the home page is untouched.
+   --------------------------------------------------------------- */
+/* Adjacent vertical margins collapse to the LARGER one, so the header
+   paragraph's own 25px bottom margin has to shrink too. */
+.post-content p:has(+ ul),
+.post-content p:has(+ ol) {
+  margin-bottom: 0.3rem;
+}
+
+.post-content p + ul,
+.post-content p + ol {
+  margin-top: 0.3rem;     /* bullets hug their header line */
+  margin-bottom: 1rem;
+}
+
+.post-content ul + p,
+.post-content ol + p {
+  margin-top: 1rem;       /* modest gap before the next entry */
+}
+
+.post-content h3 {
+  margin-bottom: 0.5rem;  /* sub-headings (Grants, Honors…) sit closer to their list */
+}

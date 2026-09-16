@@ -9,7 +9,6 @@ title: "CV"
 **Ph.D., Electrical and Computer Engineering** · Rice University, Houston, TX · 2021–Present
 
 - Thesis: *From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems*
-
 - Advisor: Prof. Santiago Segarra
 
 **M.S., Electrical and Computer Engineering** · Rice University, Houston, TX · 2021–2023
@@ -22,26 +21,26 @@ title: "CV"
 
 ## Work experience
 
-**Student Researcher**, Computational Imaging Team (LUMA) · Google, Mountain View, CA · May–Sep 2026
+**Google** · Student Researcher, Computational Imaging Team (LUMA) · Mountain View, CA · May–Sep 2026
 
-- PIs: Kuldeep Purohit and Mojtaba Sahraee-Ardakan
+- PIs: [Kuldeep Purohit](https://kuldeeppurohit.github.io/) and [Mojtaba Sahraee-Ardakan](https://scholar.google.com/citations?hl=en&user=WZ0Up04AAAAJ&view_op=list_works&sortby=pubdate)
 - Keywords: diffusion models, inference-time scaling, inverse problems
 
-**Summer Research Intern**, Computational Vision group · Center for Computational Neuroscience, Flatiron Institute, New York, NY · May–Aug 2025
+**Flatiron Institute** · Summer Research Intern, Center for Computational Neuroscience (Computational Vision group) · New York, NY · May–Aug 2025
 
-- PIs: Eero Simoncelli and Florentin Guth
+- PIs: [Eero Simoncelli](https://www.cns.nyu.edu/~eero/) and [Florentin Guth](https://florentinguth.github.io/)
 - Keywords: energy-based models, inverse problems, anisotropic diffusion models
 
-**Research Intern**, AI for Wireless · InterDigital, Los Altos, CA · May–Aug 2024
+**InterDigital** · Summer Research Intern, Wireless AI Lab · Los Altos, CA · May–Aug 2024
 
-- PIs: Akshay Malhotra and Shahab Hamidi-Rad
+- PIs: [Akshay Malhotra](https://scholar.google.com/citations?hl=en&user=7YHq6xYAAAAJ&view_op=list_works&sortby=pubdate) and Shahab Hamidi-Rad
 - Keywords: topological autoencoder, zero-shot stitching, latent space communication
 
-**Data Engineer** · ExxonMobil, Buenos Aires, Argentina · 2019–2021
+**ExxonMobil** · Data Engineer · Buenos Aires, Argentina · 2019–2021
 
 - Keywords: front and back-end, cloud computing, agile methodologies
 
-**Research Assistant** · School of Engineering, University of Buenos Aires · 2018–2019
+**University of Buenos Aires** · Research Assistant, School of Engineering · 2018–2019
 
 - PIs: Bruno Cernuschi-Frias, Juan Augusto Maya, Andres Altieri
 - Keywords: particle filter, ground penetrating radar imaging, Green's function, sparse Bayesian learning
@@ -86,7 +85,6 @@ title: "CV"
 
 ### Workshops
 
-- **Advances in Approximate Bayesian Inference (AABI) 2025**, Singapore — *Repulsive Latent Score Distillation for Solving Inverse Problems* presented in the fast track
 - **Khipu AI 2025**, Santiago, Chile — the largest gathering of students, researchers and innovators in AI and machine learning across Latin America
 - **LOGML Summer School 2024**, London, UK — geometry and machine learning
 - **Graph Signal Processing Workshop 2023**, Oxford, UK — poster presentation
