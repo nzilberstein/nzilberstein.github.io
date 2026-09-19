@@ -180,7 +180,7 @@
           "Antonio G. Marques"
         ],
         "year": "2025",
-        "venue": "arXiv preprint arXiv:2505.19685",
+        "venue": "IEEE Trans. Signal Inf. Process. Netw. (TSIN) - Under Review",
         "url": "",
         "doi": "",
         "code": "",
@@ -204,7 +204,7 @@
           "Luiz Chamon"
         ],
         "year": "2025",
-        "venue": "Asilomar Conf. Signals, Syst. and Comp.",
+        "venue": "Asilomar Conf. Si`nals, Syst. and Comp. (ASILOMAR)",
         "url": "https://arxiv.org/pdf/2512.22153",
         "doi": "",
         "code": "",
@@ -248,7 +248,7 @@
       {
         "key": "cox_ICASSP2024",
         "category": "sp",
-        "title": "End-to-end learning of GAUSSIAN MIXTURE PROPOSALS USING DIFFERENTIABLE PARTICLE FILTERS AND NEURAL NETWORKS",
+        "title": "End-to-end learning of Gaussian mixture proposals using differentiable particle filters and neural networks",
         "authors": [
           "Benjamin Cox",
           "Sara Perez-Vieites",
@@ -349,7 +349,7 @@
           "Santiago Segarra"
         ],
         "year": "2023",
-        "venue": "Asilomar Conf. Signals, Syst. and Comp.",
+        "venue": "Asilomar Conf. Signals, Syst. and Comp. (ASILOMAR)",
         "url": "",
         "doi": "",
         "code": "",
