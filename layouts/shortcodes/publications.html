@@ -6,6 +6,8 @@
        {{< publications years="false" >}}         no year headings
        {{< publications images="true" >}}         show teaser thumbnails
        {{< publications exclude="preprint" >}}    omit entries with a keyword
+       {{< publications category="ml" >}}         one computed bucket:
+                                                  ml | journal | sp | workshop | preprint
 
      Thumbnails are off by default, so the full list stays text-only.
 
@@ -13,6 +15,7 @@
      flat list keeps that order without the headings. */}}
 {{ $filter := lower (.Get "filter" | default "") }}
 {{ $exclude := lower (.Get "exclude" | default "") }}
+{{ $category := lower (.Get "category" | default "") }}
 {{ $showYears := ne (.Get "years" | default "true") "false" }}
 {{ $showImages := eq (.Get "images" | default "false") "true" }}
 {{ $me := site.Params.authorName | default "" }}
@@ -25,6 +28,7 @@
       {{ range .items }}
         {{ $keep := or (eq $filter "") (in .keywords $filter) }}
         {{ if and $keep $exclude }}{{ $keep = not (in .keywords $exclude) }}{{ end }}
+        {{ if and $keep $category }}{{ $keep = eq .category $category }}{{ end }}
         {{ if $keep }}
           {{ $items = $items | append . }}
         {{ end }}
@@ -44,6 +48,7 @@
       {{ range .items }}
         {{ $keep := or (eq $filter "") (in .keywords $filter) }}
         {{ if and $keep $exclude }}{{ $keep = not (in .keywords $exclude) }}{{ end }}
+        {{ if and $keep $category }}{{ $keep = eq .category $category }}{{ end }}
         {{ if $keep }}
           {{ $all = $all | append . }}
         {{ end }}

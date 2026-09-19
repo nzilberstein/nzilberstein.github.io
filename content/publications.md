@@ -5,11 +5,25 @@ title: "Publications"
 [Google Scholar](https://scholar.google.com/citations?user=nXRpGgkAAAAJ&hl=en&authuser=1)
 
 
-{{< publications exclude="preprint" >}}
+## Machine learning conferences
+
+{{< publications category="ml" years="false" >}}
+
+## Journals
+
+{{< publications category="journal" years="false" >}}
+
+## Signal processing conferences
+
+{{< publications category="sp" years="false" >}}
+
+## Workshops
+
+{{< publications category="workshop" years="false" >}}
 
 ## Preprints
 
-{{< publications filter="preprint" >}}
+{{< publications category="preprint" years="false" >}}
 
 ## Patents
 
