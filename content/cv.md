@@ -6,16 +6,16 @@ title: "CV"
 
 ## Education
 
-**Ph.D., Electrical and Computer Engineering** · Rice University, Houston, TX · 2021–Present
+**Ph.D., Electrical and Computer Engineering** · Rice University, Houston, TX · Jan 2021 – Sep 2026
 
 - Thesis: *From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems*
 - Advisor: Prof. Santiago Segarra
 
-**M.S., Electrical and Computer Engineering** · Rice University, Houston, TX · 2021–2023
+**M.S., Electrical and Computer Engineering** · Rice University, Houston, TX ·  Jan 2021 – Nov 2026
 
 - Thesis: *Annealed Langevin dynamics for massive MIMO communications*
 
-**B.S., Electrical Engineering (with honors)** · University of Buenos Aires, Argentina · 2013–2020
+**B.S., Electrical Engineering (with honors)** · University of Buenos Aires, Argentina ·  March 2013 – Feb 2020
 
 - Thesis: *Development of inference algorithms for UWB-GPR signals*
 
@@ -36,7 +36,7 @@ title: "CV"
 - PIs: [Akshay Malhotra](https://scholar.google.com/citations?hl=en&user=7YHq6xYAAAAJ&view_op=list_works&sortby=pubdate) and Shahab Hamidi-Rad
 - Keywords: topological autoencoder, zero-shot stitching, latent space communication
 
-**ExxonMobil** · Data Engineer · Buenos Aires, Argentina · 2019–2021
+**ExxonMobil** · Data Engineer · Buenos Aires, Argentina · Jul 2019 – Dec 2021
 
 - Keywords: front and back-end, cloud computing, agile methodologies
 
