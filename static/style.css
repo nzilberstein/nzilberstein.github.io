@@ -358,7 +358,7 @@ html[data-theme="dark"] {
 html[data-theme="light"] {
   --background: #fbfaf7;
   --foreground: #1e1b18;
-  --accent: #1aadf1;   /* c24400 Caltech's own darker orange (their --primary) */
+  --accent: #2f96fc; /*lightblue 1aadf1   /* c24400 Caltech's own darker orange (their --primary) */
   --muted: #6f6a62;
   --hairline: color-mix(in srgb, var(--foreground) 14%, transparent);
 }
@@ -369,7 +369,7 @@ html[data-theme="light"] {
   html:not([data-theme="dark"]) {
     --background: #ffffff;
     --foreground: #1e1b18;
-    --accent: #2f96fc;   /* c24400 Caltech's own darker orange (their --primary) */
+    --accent: #2f96fc; /*lightblue 2f96fc   /* ed7739, c24400 Caltech's own darker orange (their --primary) */
     --muted: #6f6a62;
     --hairline: color-mix(in srgb, var(--foreground) 14%, transparent);
   }
@@ -464,4 +464,45 @@ html[data-theme="light"] {
 
 .post-content h3 {
   margin-bottom: 0.5rem;  /* sub-headings (Grants, Honors…) sit closer to their list */
+}
+
+/* ---------------------------------------------------------------
+   Publication entries: "Title, with A, B and C, VENUE YEAR." The venue
+   is the emphasised element; a small accent marker leads each entry
+   (not the thumbnail ones, where the image does that job).
+   --------------------------------------------------------------- */
+.pub__venue {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--foreground);
+  opacity: 1;
+}
+
+.pubs__list > .pub:not(.pub--figure) {
+  position: relative;
+  padding-left: 1.3em;
+}
+
+.pubs__list > .pub:not(.pub--figure)::before {
+  content: "\25B8";           /* ▸ */
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* Two-line entries: title — authors, then venue + links beneath. */
+.pub {
+  margin-bottom: 0.9rem;
+}
+
+.pub__dash {
+  color: var(--muted);
+}
+
+.pub__meta {
+  margin-top: 0.1rem;
+}
+
+.pub__links {
+  white-space: nowrap;      /* [paper] [code] never splits across lines */
 }

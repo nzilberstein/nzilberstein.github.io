@@ -6,6 +6,8 @@
        {{< publications years="false" >}}         no year headings
        {{< publications images="true" >}}         show teaser thumbnails
        {{< publications exclude="preprint" >}}    omit entries with a keyword
+       {{< publications style="with" >}}          "with A and B", your name omitted
+                                                  (default "full": all authors, yours bold)
        {{< publications category="ml" >}}         one computed bucket:
                                                   ml | journal | sp | workshop | preprint
 
@@ -16,6 +18,7 @@
 {{ $filter := lower (.Get "filter" | default "") }}
 {{ $exclude := lower (.Get "exclude" | default "") }}
 {{ $category := lower (.Get "category" | default "") }}
+{{ $style := lower (.Get "style" | default "full") }}
 {{ $showYears := ne (.Get "years" | default "true") "false" }}
 {{ $showImages := eq (.Get "images" | default "false") "true" }}
 {{ $me := site.Params.authorName | default "" }}
@@ -37,7 +40,7 @@
         <h3 class="pubs__year">{{ $year }}</h3>
         <ul class="pubs__list">
           {{ range . }}
-            {{ partial "pub-item.html" (dict "pub" . "me" $me "images" $showImages) }}
+            {{ partial "pub-item.html" (dict "pub" . "me" $me "images" $showImages "style" $style) }}
           {{ end }}
         </ul>
       {{ end }}
@@ -57,7 +60,7 @@
     {{ with $all }}
       <ul class="pubs__list">
         {{ range . }}
-          {{ partial "pub-item.html" (dict "pub" . "me" $me "images" $showImages) }}
+          {{ partial "pub-item.html" (dict "pub" . "me" $me "images" $showImages "style" $style) }}
         {{ end }}
       </ul>
     {{ end }}

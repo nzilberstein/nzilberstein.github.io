@@ -117,6 +117,15 @@ def parse(text):
             fm = re.compile(r"\s*(\w+)\s*=").match(text, i)
             if not fm:
                 break
+            # If the value is a single bare @string macro (journal=ICML),
+            # keep the macro's own name as a short form of the venue.
+            tok, j, kind = read_part(text, fm.end())
+            if kind == "bare" and tok.lower() in macros:
+                k = j
+                while k < len(text) and text[k].isspace():
+                    k += 1
+                if k < len(text) and text[k] != "#":
+                    fields["_short_" + fm.group(1).lower()] = tok
             value, i = read_value(text, fm.end(), macros)
             fields[fm.group(1).lower()] = clean(value)
             while i < len(text) and text[i] in " \n\r\t,":
@@ -187,6 +196,11 @@ def main():
         venue = next((f[k] for k in VENUE_FIELDS if f.get(k)), "")
         if etype == "phdthesis" and f.get("school"):
             venue = f"PhD thesis, {f['school']}"
+        # Short venue for compact lists: the @string name if one was used
+        # (ICML, TSP, ICASSP), "arXiv" for preprints, else the venue itself.
+        venue_short = next((f["_short_" + k] for k in VENUE_FIELDS if f.get("_short_" + k)), "")
+        if not venue_short:
+            venue_short = "arXiv" if "arxiv" in venue.lower() else venue
         pubs.append({
             "key": key,
             "category": f.get("category", "").strip().lower(),
@@ -194,6 +208,7 @@ def main():
             "authors": format_authors(f.get("author", "")),
             "year": year,
             "venue": venue,
+            "venue_short": venue_short,
             "url": f.get("url") or f.get("howpublished_url") or "",
             "doi": f.get("doi", ""),
             "code": f.get("code", ""),

@@ -4,26 +4,32 @@ title: "CV"
 
 [Download as PDF](/cv.pdf)
 
+## Current position
+
+**Caltech** · Postdoctoral Researcher, Computing and Mathematical Sciences · Pasadena, CA · Sep 2026 – Present
+
+- PI: [Katie Bouman](https://users.cms.caltech.edu/~klbouman/)
+
 ## Education
 
 **Ph.D., Electrical and Computer Engineering** · Rice University, Houston, TX · Jan 2021 – Sep 2026
 
 - Thesis: *From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems*
-- Advisor: Prof. Santiago Segarra
+- Advisor: [Santiago Segarra](https://profiles.rice.edu/faculty/santiago-segarra)
 
-**M.S., Electrical and Computer Engineering** · Rice University, Houston, TX ·  Jan 2021 – Nov 2026
+**M.S., Electrical and Computer Engineering** · Rice University, Houston, TX · Jan 2021 – Nov 2023
 
 - Thesis: *Annealed Langevin dynamics for massive MIMO communications*
 
-**B.S., Electrical Engineering (with honors)** · University of Buenos Aires, Argentina ·  March 2013 – Feb 2020
+**B.S., Electrical Engineering (with honors)** · University of Buenos Aires, Argentina · Mar 2013 – Feb 2020
 
 - Thesis: *Development of inference algorithms for UWB-GPR signals*
 
-## Work experience
+## Experience
 
 **Google** · Student Researcher, Computational Imaging Team (LUMA) · Mountain View, CA · May–Sep 2026
 
-- PIs: [Kuldeep Purohit](https://kuldeeppurohit.github.io/) and [Mojtaba Sahraee-Ardakan](https://scholar.google.com/citations?hl=en&user=WZ0Up04AAAAJ&view_op=list_works&sortby=pubdate)
+- PIs: [Kuldeep Purohit](https://kuldeeppurohit.github.io/), [Mojtaba Sahraee-Ardakan](https://scholar.google.com/citations?hl=en&user=WZ0Up04AAAAJ&view_op=list_works&sortby=pubdate) and [Mauricio Delbracio](https://mdelbra.github.io/)
 - Keywords: diffusion models, inference-time scaling, inverse problems
 
 **Flatiron Institute** · Summer Research Intern, Center for Computational Neuroscience (Computational Vision group) · New York, NY · May–Aug 2025
@@ -36,7 +42,7 @@ title: "CV"
 - PIs: [Akshay Malhotra](https://scholar.google.com/citations?hl=en&user=7YHq6xYAAAAJ&view_op=list_works&sortby=pubdate) and Shahab Hamidi-Rad
 - Keywords: topological autoencoder, zero-shot stitching, latent space communication
 
-**ExxonMobil** · Data Engineer · Buenos Aires, Argentina · Jul 2019 – Dec 2021
+**ExxonMobil** · Data Engineer · Buenos Aires, Argentina · Jul 2019 – Dec 2020
 
 - Keywords: front and back-end, cloud computing, agile methodologies
 
@@ -50,12 +56,12 @@ title: "CV"
 ### Grants
 
 - **NVIDIA Academic Grant** — 2026
-- **AI generated visuals: a solution for image demand in social science research** — Center for Computational Insights on Inequality and Society, Rice University (5,000 USD), 2025
+- **AI generated visuals: a solution for image demand in social science research** — Rice University, 2025
 
 ### Fellowships
 
 - **Ken Kennedy – HPE Cray Graduate Fellowship** — Rice University, 2024. One-year fellowship for outstanding graduate students.
-- **UBACyT Scholarship** (declined) — University of Buenos Aires, 2018. Scholarship for undergraduates to develop a research project.
+- **UBACyT Scholarship** (declined) — University of Buenos Aires, 2018. Scholarship for undergraduates to initiate on research.
 
 ### Honors
 
@@ -83,9 +89,9 @@ title: "CV"
 
 - **Special Session: Generative AI for Graphs** — Asilomar 2026. Organizer and Technical Chair.
 
-### Workshops
+### Workshops attendance
 
-- **Khipu AI 2025**, Santiago, Chile — the largest gathering of students, researchers and innovators in AI and machine learning across Latin America
+- **Khipu AI 2025**, Santiago, Chile — AI and machine learning in Latin America
 - **LOGML Summer School 2024**, London, UK — geometry and machine learning
 - **Graph Signal Processing Workshop 2023**, Oxford, UK — poster presentation
 

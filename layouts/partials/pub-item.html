@@ -1,55 +1,58 @@
-{{/* One publication, as a single flowing line. Called with:
-       dict "pub" <entry> "me" <author name to bold> "images" <bool>
-     A teaser thumbnail is drawn to the left of the text only when the
-     caller asks for images AND the entry has one. */}}
+{{/* One publication, on two lines:
+
+       ▸ Title — Author A, Your Name, Author C
+         Venue Year (note) [paper] [code]   <- venue in italics
+
+     Called with dict "pub" <entry> "me" <your name> "images" <bool>
+     and optionally "style": "full" (default: every author, yours bold)
+     or "with" (your name omitted, list introduced by "with").
+     A teaser thumbnail is drawn to the left only when the caller asks for
+     images AND the entry has one. */}}
 {{ $pub := .pub }}
 {{ $me := .me }}
 {{ $images := .images | default false }}
-{{ $parts := slice }}
+{{ $style := .style | default "full" }}
 
-{{/* Title, bold and linked when there is a URL. Add a full stop only if
-     the title does not already end in punctuation. */}}
-{{ $t := htmlEscape $pub.title }}
-{{ $dot := cond (or (hasSuffix $pub.title ".") (or (hasSuffix $pub.title "?") (hasSuffix $pub.title "!"))) "" "." }}
-{{ $title := printf "<strong>%s</strong>%s" $t $dot }}
-{{ with $pub.url }}
-  {{ $title = printf `<a href="%s"><strong>%s</strong></a>%s` . $t $dot }}
-{{ end }}
-{{ $parts = $parts | append $title }}
-
-{{ with $pub.authors }}
-  {{ $names := slice }}
-  {{ range . }}
-    {{ if and $me (eq . $me) }}
-      {{ $names = $names | append (printf "<strong>%s</strong>" (htmlEscape .)) }}
-    {{ else }}
-      {{ $names = $names | append (htmlEscape .) }}
-    {{ end }}
+{{/* Line 1: title — authors. Equal-contribution asterisks are ignored
+     when matching your name, and kept in the output. */}}
+{{ $names := slice }}
+{{ range $pub.authors }}
+  {{ $isMe := and $me (eq (strings.TrimSuffix "*" .) $me) }}
+  {{ if eq $style "with" }}
+    {{ if not $isMe }}{{ $names = $names | append (htmlEscape .) }}{{ end }}
+  {{ else if $isMe }}
+    {{ $names = $names | append (printf "<strong>%s</strong>" (htmlEscape .)) }}
+  {{ else }}
+    {{ $names = $names | append (htmlEscape .) }}
   {{ end }}
-  {{ $parts = $parts | append (printf `<span class="pub__authors">%s.</span>` (delimit $names ", ")) }}
+{{ end }}
+{{ $head := printf `<span class="pub__title">%s</span>` (htmlEscape $pub.title) }}
+{{ with $names }}
+  {{ $authors := cond (eq $style "with") (printf "with %s" (delimit . ", " " and ")) (delimit . ", ") }}
+  {{ $head = printf `%s <span class="pub__dash">—</span> <span class="pub__authors">%s</span>` $head $authors }}
 {{ end }}
 
+{{/* Line 2: venue exactly as the .bib gives it (an @string expands to
+     its full text), plus year, with any note in parentheses; then links. */}}
 {{ $venue := $pub.venue }}
-{{ if and $venue $pub.year }}{{ $venue = printf "%s, %s" $venue $pub.year }}{{ end }}
-{{ with $pub.note }}{{ $venue = printf "%s. %s" $venue . }}{{ end }}
-{{ with $venue }}
-  {{ $parts = $parts | append (printf `<span class="pub__venue">%s.</span>` (htmlEscape .)) }}
-{{ end }}
-
+{{ if and $venue $pub.year }}{{ $venue = printf "%s %s" $venue $pub.year }}{{ end }}
+{{ with $pub.note }}{{ $venue = printf "%s (%s)" $venue . }}{{ end }}
+{{ $meta := slice }}
+{{ with $venue }}{{ $meta = $meta | append (printf `<em class="pub__venue">%s</em>` (htmlEscape .)) }}{{ end }}
 {{ $links := slice }}
 {{ with $pub.url }}{{ $links = $links | append (printf `<a href="%s">paper</a>` .) }}{{ end }}
 {{ with $pub.code }}{{ $links = $links | append (printf `<a href="%s">code</a>` .) }}{{ end }}
 {{ with $pub.doi }}{{ $links = $links | append (printf `<a href="https://doi.org/%s">doi</a>` .) }}{{ end }}
-{{ with $links }}
-  {{ $parts = $parts | append (printf `<span class="pub__links">[%s]</span>` (delimit . "] [")) }}
-{{ end }}
+{{ with $links }}{{ $meta = $meta | append (printf `<span class="pub__links">[%s]</span>` (delimit . "] [")) }}{{ end }}
 
-{{ $text := delimit $parts " " }}
+{{ $body := printf `<div class="pub__head">%s</div>` $head }}
+{{ with $meta }}{{ $body = printf `%s<div class="pub__meta">%s</div>` $body (delimit . " ") }}{{ end }}
+
 {{ if and $images $pub.image }}
   <li class="pub pub--figure">
     <img class="pub__thumb" src="{{ $pub.image | safeURL }}" alt="{{ $pub.image_alt | default $pub.title | plainify }}" />
-    <div class="pub__text">{{ $text | safeHTML }}</div>
+    <div class="pub__text">{{ $body | safeHTML }}</div>
   </li>
 {{ else }}
-  <li class="pub">{{ $text | safeHTML }}</li>
+  <li class="pub">{{ $body | safeHTML }}</li>
 {{ end }}

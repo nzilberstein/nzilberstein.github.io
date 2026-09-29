@@ -3,8 +3,34 @@
     "year": "2026",
     "items": [
       {
+        "key": "tenoriograph2",
+        "category": "journal",
+        "title": "Graph Guided Diffusion: Unified Guidance for Conditional Graph Generation",
+        "authors": [
+          "Victor M. Tenorio",
+          "Nicolas Zilberstein",
+          "Santiago Segarra",
+          "Antonio G. Marques"
+        ],
+        "year": "2026",
+        "venue": "IEEE Trans. Signal Inf. Process. Netw. - Under Review",
+        "venue_short": "IEEE Trans. Signal Inf. Process. Netw. - Under Review",
+        "url": "",
+        "doi": "",
+        "code": "",
+        "note": "",
+        "short": "",
+        "image": "",
+        "image_alt": "",
+        "keywords": [
+          "pretrain",
+          "graph",
+          "journal"
+        ]
+      },
+      {
         "key": "pifm",
-        "category": "workshop",
+        "category": "journal",
         "title": "Prior-informed Flow Matching for Graph Reconstruction",
         "authors": [
           "Haoming Chen",
@@ -12,7 +38,8 @@
           "Santiago Segarra"
         ],
         "year": "2026",
-        "venue": "ICML workshop SPIGM",
+        "venue": "Trans. Mach. Learn. Res. (TMLR)",
+        "venue_short": "Trans. Mach. Learn. Res. (TMLR)",
         "url": "https://example.org/paper",
         "doi": "",
         "code": "https://github.com/nzilberstein/example",
@@ -22,7 +49,8 @@
         "image_alt": "",
         "keywords": [
           "train",
-          "graph"
+          "graph",
+          "journal"
         ]
       },
       {
@@ -37,6 +65,7 @@
         ],
         "year": "2026",
         "venue": "Intl. Conf. on Machine Learning (ICML)",
+        "venue_short": "ICML",
         "url": "https://openreview.net/pdf?id=PlFJwgaaDK",
         "doi": "",
         "code": "https://github.com/nzilberstein/Anisotropic-energy-Model",
@@ -52,7 +81,7 @@
       },
       {
         "key": "flow_maps",
-        "category": "workshop",
+        "category": "ml",
         "title": "Flow Map Denoisers: Traversing the Distortion-Perception Plane for Inverse Problems",
         "authors": [
           "Nicolas Zilberstein",
@@ -60,7 +89,8 @@
           "Santiago Segarra"
         ],
         "year": "2026",
-        "venue": "ICML workshop SPIGM",
+        "venue": "Advances in Neural Inf. Process. Syst. (NeurIPS)",
+        "venue_short": "NIPS",
         "url": "https://arxiv.org/pdf/2606.19802",
         "doi": "",
         "code": "https://github.com/nzilberstein/Flow-map-denoisers",
@@ -90,6 +120,7 @@
         ],
         "year": "2025",
         "venue": "Intl. Conf. Learn. Repr. (ICLR)",
+        "venue_short": "ICLR",
         "url": "https://openreview.net/pdf?id=bwJxUB0y46",
         "doi": "",
         "code": "https://github.com/nzilberstein/Repulsive-score-distillation-RSD-",
@@ -114,6 +145,7 @@
         ],
         "year": "2025",
         "venue": "Intl. Conf. on Artif. Intell. and Stat. (AISTATS)",
+        "venue_short": "AISTATS",
         "url": "",
         "doi": "",
         "code": "",
@@ -137,6 +169,7 @@
         ],
         "year": "2025",
         "venue": "arXiv preprint arXiv:2506.06212",
+        "venue_short": "arXiv",
         "url": "",
         "doi": "",
         "code": "",
@@ -145,52 +178,6 @@
         "image": "",
         "image_alt": "",
         "keywords": [
-          "preprint"
-        ]
-      },
-      {
-        "key": "tenoriograph",
-        "category": "workshop",
-        "title": "Graph Guided Diffusion: Unified Guidance for Conditional Graph Generation",
-        "authors": [
-          "Victor M. Tenorio",
-          "Nicolas Zilberstein",
-          "Santiago Segarra",
-          "Antonio G. Marques"
-        ],
-        "year": "2025",
-        "venue": "NeurIPS workshop NPGML",
-        "url": "",
-        "doi": "",
-        "code": "",
-        "note": "",
-        "short": "",
-        "image": "",
-        "image_alt": "",
-        "keywords": []
-      },
-      {
-        "key": "tenoriograph2",
-        "category": "preprint",
-        "title": "Graph Guided Diffusion: Unified Guidance for Conditional Graph Generation",
-        "authors": [
-          "Victor M. Tenorio",
-          "Nicolas Zilberstein",
-          "Santiago Segarra",
-          "Antonio G. Marques"
-        ],
-        "year": "2025",
-        "venue": "IEEE Trans. Signal Inf. Process. Netw. (TSIN) - Under Review",
-        "url": "",
-        "doi": "",
-        "code": "",
-        "note": "",
-        "short": "",
-        "image": "",
-        "image_alt": "",
-        "keywords": [
-          "pretrain",
-          "graph",
           "preprint"
         ]
       },
@@ -205,6 +192,7 @@
         ],
         "year": "2025",
         "venue": "Asilomar Conf. Si`nals, Syst. and Comp. (ASILOMAR)",
+        "venue_short": "Asilomar Conf. Si`nals, Syst. and Comp. (ASILOMAR)",
         "url": "https://arxiv.org/pdf/2512.22153",
         "doi": "",
         "code": "",
@@ -233,6 +221,7 @@
         ],
         "year": "2024",
         "venue": "IEEE Intl. Conf. Acoust., Speech and Signal Process. (ICASSP)",
+        "venue_short": "ICASSP",
         "url": "",
         "doi": "",
         "code": "",
@@ -259,6 +248,7 @@
         ],
         "year": "2024",
         "venue": "IEEE Intl. Conf. Acoust., Speech and Signal Process. (ICASSP)",
+        "venue_short": "ICASSP",
         "url": "",
         "doi": "",
         "code": "",
@@ -279,6 +269,7 @@
         ],
         "year": "2024",
         "venue": "IEEE Trans. Signal Process.",
+        "venue_short": "TSP",
         "url": "",
         "doi": "",
         "code": "",
@@ -300,6 +291,7 @@
         ],
         "year": "2024",
         "venue": "NeurIPS workshop UniReps",
+        "venue_short": "NeurIPS workshop UniReps",
         "url": "",
         "doi": "",
         "code": "",
@@ -327,6 +319,7 @@
         ],
         "year": "2023",
         "venue": "IEEE Intl. Conf. Acoust., Speech and Signal Process. (ICASSP)",
+        "venue_short": "ICASSP",
         "url": "",
         "doi": "",
         "code": "",
@@ -350,6 +343,7 @@
         ],
         "year": "2023",
         "venue": "Asilomar Conf. Signals, Syst. and Comp. (ASILOMAR)",
+        "venue_short": "Asilomar Conf. Signals, Syst. and Comp. (ASILOMAR)",
         "url": "",
         "doi": "",
         "code": "",
@@ -372,6 +366,7 @@
         ],
         "year": "2023",
         "venue": "IEEE Trans. Signal Process.",
+        "venue_short": "TSP",
         "url": "",
         "doi": "",
         "code": "",
@@ -394,6 +389,7 @@
         ],
         "year": "2023",
         "venue": "Graph Signal Processing Workshop",
+        "venue_short": "Graph Signal Processing Workshop",
         "url": "",
         "doi": "",
         "code": "",
@@ -421,6 +417,7 @@
         ],
         "year": "2022",
         "venue": "European Signal Process. Conf. (EUSIPCO)",
+        "venue_short": "EUSIPCO",
         "url": "",
         "doi": "10.23919/EUSIPCO55093.2022.9909638",
         "code": "",
@@ -443,6 +440,7 @@
         ],
         "year": "2022",
         "venue": "European Signal Process. Conf. (EUSIPCO)",
+        "venue_short": "EUSIPCO",
         "url": "",
         "doi": "",
         "code": "",
@@ -464,6 +462,7 @@
         ],
         "year": "2022",
         "venue": "IEEE Intl. Conf. Acoust., Speech and Signal Process. (ICASSP)",
+        "venue_short": "ICASSP",
         "url": "",
         "doi": "",
         "code": "",
@@ -486,6 +485,7 @@
         ],
         "year": "2022",
         "venue": "IEEE Trans. Wireless Commun.",
+        "venue_short": "TWC",
         "url": "",
         "doi": "",
         "code": "",
@@ -514,6 +514,7 @@
         ],
         "year": "2021",
         "venue": "Electr. Lett.",
+        "venue_short": "Electr. Lett.",
         "url": "",
         "doi": "",
         "code": "",
@@ -538,6 +539,7 @@
         ],
         "year": "2018",
         "venue": "2018 Argentine Conference on Automatic Control (AADECA)",
+        "venue_short": "2018 Argentine Conference on Automatic Control (AADECA)",
         "url": "",
         "doi": "",
         "code": "",
