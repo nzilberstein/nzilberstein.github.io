@@ -3,7 +3,7 @@ title: "Welcome"
 ---
 
 {{< profile src="/image_scholar.jpg" alt="Nicolas Zilberstein" >}}
-Incoming postdoctoral researcher @ Caltech
+Postdoctoral researcher @ Caltech
 
 [nzilberstein@rice.edu](mailto:nzilberstein@rice.edu) ·
 [Google Scholar](https://scholar.google.com/citations?user=nXRpGgkAAAAJ&hl=en&authuser=1) ·
@@ -13,7 +13,7 @@ Incoming postdoctoral researcher @ Caltech
 <<<
 <!-- ## About me -->
 
-I am a incoming postdoctoral researcher at [Caltech](https://www.cms.caltech.edu), working with [Katie Bouman](https://users.cms.caltech.edu/~klbouman/).
+I am a postdoctoral researcher at [Caltech](https://www.cms.caltech.edu), working with [Katie Bouman](https://users.cms.caltech.edu/~klbouman/).
 
 <!--Previously, I received my PhD in Electrical and Computer Engineering at [Rice University](https://eceweb.rice.edu), advised by [Santiago Segarra](https://profiles.rice.edu/faculty/santiago-segarra). During my PhD, I was very fortunate to intern at Google at the Computational Imaging Team (Summer 2026), [Center of Computational Neuroscience at Flatiron Institute](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) at the [LCV group](https://www.cns.nyu.edu/~lcv/) (Summer 2025) and [InterDigital](https://www.interdigital.com/) at the Wireless lab (Summer 2024).-->
 
@@ -30,8 +30,8 @@ I received my PhD and M.S. in Electrical and Computer Engineering from [Rice Uni
 ## News
 
 <!--- Oct 2026 — I started my postdoc at Caltech -->
-- Sep 2026 — Paper ([Flow map denoisers](https://arxiv.org/pdf/2606.19802)) accepted to NeurIPS 2026
 <!-- - Sep 2026 — Paper ([PIFM](https://arxiv.org/pdf/2601.22107)) accepted to TMLR -->
+- Sep 2026 — Paper ([Flow map denoisers](https://arxiv.org/pdf/2606.19802)) accepted to NeurIPS 2026
 - Sep 2026 — I successfully defended my PhD
 - May 2026 — I started my internship at Google, working with the Computational Imaging team
 - Feb 2026 — Paper ([Energy models for inverse problems](https://openreview.net/pdf?id=PlFJwgaaDK)) accepted at ICML 2026. This paper is the outcome of my summer internship at Flatiron!
