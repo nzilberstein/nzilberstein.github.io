@@ -30,7 +30,7 @@
       },
       {
         "key": "pifm",
-        "category": "journal",
+        "category": "sp",
         "title": "Prior-informed Flow Matching for Graph Reconstruction",
         "authors": [
           "Haoming Chen",
@@ -38,8 +38,8 @@
           "Santiago Segarra"
         ],
         "year": "2026",
-        "venue": "Under Review - Trans. Mach. Learn. Res. (TMLR)",
-        "venue_short": "Under Review - Trans. Mach. Learn. Res. (TMLR)",
+        "venue": "Under Review",
+        "venue_short": "Under Review",
         "url": "https://example.org/paper",
         "doi": "",
         "code": "https://github.com/nzilberstein/example",
