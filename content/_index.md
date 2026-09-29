@@ -31,7 +31,7 @@ I received my PhD and M.S. in Electrical and Computer Engineering from [Rice Uni
 
 <!--- Oct 2026 — I started my postdoc at Caltech -->
 - Sep 2026 — Paper ([Flow map denoisers](https://arxiv.org/pdf/2606.19802)) accepted to NeurIPS 2026
-- Sep 2026 — Paper ([PIFM](https://arxiv.org/pdf/2601.22107)) accepted to TMLR
+<!-- - Sep 2026 — Paper ([PIFM](https://arxiv.org/pdf/2601.22107)) accepted to TMLR -->
 - Sep 2026 — I successfully defended my PhD
 - May 2026 — I started my internship at Google, working with the Computational Imaging team
 - Feb 2026 — Paper ([Energy models for inverse problems](https://openreview.net/pdf?id=PlFJwgaaDK)) accepted at ICML 2026. This paper is the outcome of my summer internship at Flatiron!
