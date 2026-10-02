@@ -5,7 +5,7 @@ title: "Welcome"
 {{< profile src="/image_scholar.jpg" alt="Nicolas Zilberstein" >}}
 Postdoctoral researcher @ Caltech
 
-[nzilberstein@rice.edu](mailto:nzilberstein@rice.edu) ·
+[nzilberstein@rice.edu](mailto:nmz2@caltech.edu) ·
 [Google Scholar](https://scholar.google.com/citations?user=nXRpGgkAAAAJ&hl=en&authuser=1) ·
 [Git](https://github.com/nzilberstein?tab=repositories) ·
 [X](https://x.com/nizilberstein) ·
