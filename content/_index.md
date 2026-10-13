@@ -29,8 +29,8 @@ I received my PhD and M.S. in Electrical and Computer Engineering from [Rice Uni
 
 ## News
 
-<!--- Oct 2026 — I started my postdoc at Caltech -->
 <!-- - Sep 2026 — Paper ([PIFM](https://arxiv.org/pdf/2601.22107)) accepted to TMLR -->
+- Oct 2026 — I started my postdoc at Caltech
 - Sep 2026 — Paper ([Flow map denoisers](https://arxiv.org/pdf/2606.19802)) accepted to NeurIPS 2026
 - Sep 2026 — I successfully defended my PhD
 - May 2026 — I started my internship at Google, working with the Computational Imaging team

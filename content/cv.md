@@ -65,6 +65,7 @@ title: "CV"
 
 ### Honors
 
+- **Top reviewer (8%)** — NeurIPS 2026. Selected on the basis of area chair ratings.
 - **Top reviewer (Silver)** — ICML 2026. Selected on the basis of area chair ratings.
 - **Google PhD Fellowship nominee** — Rice University, 2025. One of two nominees selected by the ECE department.
 - **Excellence in Research** — Rice University, 2020. ECE section of the Gulf Coast Undergraduate Research Symposium (GCURS).
