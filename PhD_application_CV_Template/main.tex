@@ -1,0 +1,317 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{bibentry}
+\usepackage{natbib}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+
+% Begin document
+\begin{document}
+
+\nobibliography{citations}
+\bibliographystyle{unsrt}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{}
+\fancyhead[R]{}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\begin{flushleft}
+\centering\textbf{\LARGE Nicolas Zilberstein}\\[2pt] % Name
+Houston, TX $-$ \href{mailto:JohnDoe@gmail.com}{nzilberstein@rice.edu} \\ \url{https://sites.google.com/view/nzilberstein} $-$ \url{https://github.com/nzilberstein}
+\end{flushleft}
+
+\section*{CURRENT POSITION}
+\noindent
+\textbf{California Institute of Technology (Caltech)} \hfill Pasadena, CA\\ % University name and location
+Postdoctoral Researcher \hfill 2026 - Present\\ % Degree and GPA
+PIs: Prof. Katie Bouman\\
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{Rice University} \hfill Houston, TX\\ % University name and location
+Ph.D. in Electrical and Computer Engineering \hfill 2021 - 2026\\ % Degree and GPA
+Advisor: Prof. Santiago Segarra\\
+Keywords: Inverse problems, Diffusion models, Sampling, Computational imaging\\
+
+\noindent
+\textbf{Rice University} \hfill Houston, TX\\ % University name and location
+Master of Science in Electrical and Computer Engineering \hfill 2021 - 2023 \\ % Degree and GPA
+Thesis: Annealed Langevin dynamics for massive MIMO communications% Additional info
+
+\noindent\\
+\textbf{University of Buenos Aires} \hfill Buenos Aires, Argentina\\ % University name and location
+B.S. in Electrical Engineering (with honors) \hfill 2013 - 2020\\% Degree and GPA
+Thesis: Development of inference algorithms for UWB-GPR signals
+
+% Experience Section
+\section*{WORK EXPERIENCE}
+% \noindent
+% \textbf{California Institute of Technology (Caltech)} \hfill Pasadena, CA\\ % Company name and location
+% \textit{Postdoctoral Researcher} \hfill Oct 2026 - Present\\ 
+% PIs: Prof. Katie Bouman\\ % Position and duration
+% % Keywords: Diffusion models.\\
+
+
+\noindent
+\textbf{Google} \hfill Mountain View, CA\\ % Company name and location
+\textit{Student Researcher at Computational Imaging Team (LUMA)} \hfill May 2026 - August 2026\\ 
+PIs: Kuldeep Purohit and Mojtaba Sahraee-Ardakan\\ % Position and duration
+Keywords: Diffusion models, Inference-time scaling, Inverse problems.\\
+
+\noindent
+\textbf{Center for Computational Neuroscience, Flatiron Institute} \hfill New York City, NY\\ % Company name and location
+\textit{Summer research intern at the Computational Vision group} \hfill May 2025 - August 2025\\ 
+PIs: Eero Simoncelli and Florentin Guth\\ % Position and duration
+Keywords: Energy-based model, inverse problems, anisotropic diffusion models.\\
+
+\noindent
+\textbf{InterDigital} \hfill Los Altos, CA\\ % Company name and location
+\textit{Research intern - AI for wireless} \hfill May 2024 - August 2024\\ % Position and duration
+PIs: Akshay Malhotra and Shahab Hamidi-Rad\\
+Keywords: Topological autoencoder, zero-shot stitching, latent space communication.\\
+
+\noindent
+\textbf{ExxonMobil} \hfill Buenos Aires, Argentina\\ % Company name and location
+\textit{Data Engineer} \hfill 2019 - 2021\\ % Position and duration
+Keywords: Front and Back-end, Cloud computing, Agile methodologies.\\
+
+\noindent
+\textbf{School of Engineering, University of Buenos Aires} \hfill Buenos Aires, Argentina\\ % Company name and location
+\textit{Research Assistant} \hfill 2018 - 2019\\ % Position and duration
+PIs: Prof. Bruno Cernuschi-Frias, Prof. Juan Augusto Maya and Prof. Andres Altieri\\
+% UBCAyT research project 20020170200283BA\\
+Keywords: Particle filter, ground penetrating radar imaging, Green's function, sparse Bayesian learning.\\
+% Additional info
+
+
+\section*{AWARDS}
+
+
+\subsection*{\textit{Grants}}
+\textbf{NVIDIA Academic Grant}  \hfill 2026\\ \\
+\textbf{AI generated visuals: a solution for image demand in social science research}  \hfill Rice University\\
+Center for Computational Insights on Inequality and Society (5000 USD) \hfill 2025
+
+\subsection*{\textit{Fellowships}}
+\textbf{Ken Kennedy – HPE Cray Graduate Fellowship}  \hfill Rice University\\
+One-year graduate fellowships for outstanding graduate students at Rice University \hfill 2024\\ \\
+\textbf{UBACyT Scholarship (declined)}  \hfill University of Buenos Aires\\ 
+Scholarship for undergraduate students to develop a research project \hfill 2018
+
+\subsection*{\textit{Honors}}
+\textbf{Top reviewer}  \hfill NeurIPS\\
+Selected as a top 8\% reviewer based on the area chairs rating \hfill  2026\\ \\
+\textbf{Top reviewer (Silver)}  \hfill ICML\\
+Selected as a top reviewer based on the area chairs rating \hfill  2026\\ \\
+\textbf{Google PhD fellowship nominee}  \hfill Rice University\\
+One of two nominees selected by the ECE department \hfill 2025\\ \\
+\textbf{Excellence in Research}  \hfill Rice University\\ 
+Award from the ECE section of the Gulf Coast Undergraduate Research Symposium (GCURS) \hfill 2020
+
+\subsection*{\textit{Travel grants}}
+\textbf{ICML Travel Grant}\hfill 2026\\
+\textbf{ICLR, AISTATS Travel Grant}\hfill 2025\\
+\textbf{REA (Rice Engineering Alumni) Graduate Student Travel Grant}\hfill 2025\\
+% \section*{SPECI}
+% \textbf{Excellence in Research}  \hfill Houston, TX\\ 
+% Award from the ECE section of the Gulf Coast Undergraduate Research Symposium at Rice University \hfill 2020\\ \\
+% \textbf{UBACyT Scholarship (declined)}  \hfill Buenos Aires, Argentina\\ 
+% Scolarshisp for undergraduate students to develop a research project \hfill 2018
+
+\section*{PUBLICATIONS}
+% \subsection*{Under review}
+
+% \begin{enumerate}
+% \end{enumerate}
+
+
+\subsection*{Journals}
+
+
+\begin{enumerate}[start=1,label={[J\arabic*]},itemsep=\baselineskip]
+    \item \bibentry{zilberstein2023solving}
+    \item \bibentry{gama2023unsupervised}
+    \item \bibentry{zilberstein2022annealed}
+    \item \bibentry{zilberstein2021bcs}
+\end{enumerate}
+
+\subsection*{Conference Papers}
+
+
+\begin{enumerate}[start=1,label={[C\arabic*]},itemsep=\baselineskip]
+    \item \bibentry{flatiron}
+    \item \bibentry{safesampling}
+    \item \bibentry{zilberstein2024repulsive}
+    \item \bibentry{aligraphon}
+    \item \bibentry{cox_ICASSP2024}
+    \item \bibentry{zilberstein_ICASSP2024}
+    \item \bibentry{asilomar2023}
+    \item \bibentry{zilberstein_GSPW}
+    \item \bibentry{zilberstein_ICASSP2023}
+    \item \bibentry{zilberstein_EUSIPCO2021}
+    \item \bibentry{zilberstein_EUSIPCO2021_robust}
+    \item \bibentry{gama2022unrolling}
+    \item \bibentry{zilberstein2018particle}
+\end{enumerate}
+
+
+\subsection*{Workshop Papers}
+\begin{enumerate}[start=1,label={[W\arabic*]},itemsep=\baselineskip]
+    \item \bibentry{flow_maps}
+    \item \bibentry{pifm}
+    \item \bibentry{tenoriograph}
+    \item \bibentry{zilberstein2024topological}
+\end{enumerate}
+
+
+\subsection*{Patents}
+\begin{enumerate}
+    \item ``Systems and methods for statistics based and topology based interoperable AI/ML model monitoring'' \hfill 2024\\
+    Akshay Malhotra, Yugeswar Deenoo, Nicolas Zilberstein, Shahab Hamidi-Rad, Mohamed Salah Ibrahim\\
+    InterDigital, US Patent Ref. 18889096
+    
+\end{enumerate}
+
+
+\subsection*{Preprints}
+
+\begin{enumerate}[start=1,label={[P\arabic*]},itemsep=\baselineskip]
+    % \item \bibentry{flow_maps}
+    % \item \bibentry{pifm}
+    % \item \bibentry{zilbersteinjoint}
+    % \item \bibentry{tenoriograph2}
+    \item \bibentry{aligraphon2}
+\end{enumerate}
+
+\noindent *Equal contribution
+
+
+% Experience Section
+\section*{TEACHING EXPERIENCE}
+\noindent
+\textbf{Department of Electrical and Computer Engineering, Rice University} \hfill Houston, TX\\ % Company name and location
+\textit{Teaching Assistant} % Position and duration
+\begin{itemize}
+    \item ELEC 573 Network Science and Analytics, \textit{Graduate course} \hfill Fall 2022, 2024
+    \item ELEC 301 Signals and Systems, \textit{Undergraduate course} \hfill Spring 2022, 2023, 2024, 2025
+    % Job responsibilities and achievements
+\end{itemize}
+
+\noindent
+\textbf{Graduate school of Computer Engineering, University of Buenos Aires} \hfill Buenos Aires, Argentina\\ % Company name and location
+\textit{Teaching Assistant} % Position and duration
+\begin{itemize}
+    \item Deep Learning \hfill Fall 2021
+    % Job responsibilities and achievements
+\end{itemize}
+
+\noindent
+\textbf{Department of Physics, University of Buenos Aires} \hfill Buenos Aires, Argentina\\ % Company name and location
+\textit{Teaching Assistant} % Position and duration
+\begin{itemize}
+    \item 82.02: Physics II (Electromagnetism) \hfill Spring 2020, Fall 2020
+    % Job responsibilities and achievements
+\end{itemize}
+
+\noindent
+\textbf{Department of Electronic Engineering, University of Buenos Aires} \hfill Buenos Aires, Argentina\\ % Company name and location
+\textit{Teaching Assistant} % Position and duration
+\begin{itemize}
+    \item 86.55: Detection and Estimation theory \hfill Spring 2018, 2019
+    % Job responsibilities and achievements
+\end{itemize}
+
+
+\section*{PROFESSIONAL ACTIVITIES}
+\subsection*{Invited talks}
+% \textbf{From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems} \hfill  April 2026\\
+% \textit{University of Oxford} 
+% \\
+
+\noindent \textbf{From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems} \hfill  Dec 2025\\
+\textit{Universidad de la Republica Uruguay} 
+\\
+
+\noindent \textbf{From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems} \hfill  Nov 2025\\
+Yusu Wang's group at \textit{UCSD} 
+\\ 
+
+\noindent \textbf{Towards fast samplers for solving inverse problems using diffusion models} \hfill June 2024 \\
+\textit{Pendulum Systems}
+
+\subsection*{Organization}
+\textit{Special Session: Generative AI for Graphs} \hfill Asilomar 2026\\
+Organizer and Technical Chair
+
+\subsection*{Workshops}
+\textit{Advances of Approximate Bayesian Inference (AABI) 2025} \hfill Singapore\\
+Repulsive Latent Score Distillation for Solving Inverse Problems~\cite{zilberstein2024repulsive} presented in the fast track\\ \\
+% \newpage
+\noindent \textit{Khipu AI 2025} \hfill Santiago, Chile\\
+The largest meet-up gathering students, researchers, and innovators in the field of Artificial Intelligence and Machine Learning across Latin America\\ \\
+\textit{LOGML Summer School 2024} \hfill London, UK\\
+Workshop that aims to bring together mathematicians and computer scientists to work together on a variety of problems at the intersection of geometry and machine learning\\ \\
+\textit{Graph Signal Processing Workshop 2023} \hfill Oxford, UK\\
+Workshop on graph signal processing. Poster presentation.
+
+
+\subsection*{Reviewer}
+\noindent
+Journals: IEEE Comm. Letter; IEEE Trans. Cogn. Commun.; IEEE Trans. Signal Process.; IEEE Trans. Commun.\\
+Conferences: ICCASP, EUSIPCO, ICC, SAM, CAMSAP, NeurIPS (2024, 2025), ICLR (2026), ICML (2026)
+\subsection*{Memberships}
+IEEE Member \hfill 2021 - Present\\
+IEEE Signal Processing Society Member \hfill 2021 - Present
+
+% \section*{MENTORSHIP}
+% Supervised two undergrad Serbian student's ..
+
+\section*{STUDENT ADVISEMENT}
+
+\subsection*{Graduate}
+Ali Azizpour
+
+\subsection*{Undergraduate}
+Haoming Chen \hfill Summer 2025\\
+Uros Males, Mila Bokan \hfill Summer 2023
+
+\section*{OTHER SKILLS}
+\textbf{Languages}: Spanish (native), English (fluent)
+
+
+
+% Skills Section
+\section*{COMMUNITY SERVICES}
+Evaluator at Gulf Coast Undergraduate Research Symposium (GCURS) \hfill 2024, 2025 \\
+Mentor of incoming ECE PhD students - Data science track \hfill 2024\\
+Organizer, LatAm RICE Networks, Robots, and ML Minisymposium, Rice Univ. \hfill 2021\\
+Member of the Council of the Faculty of Engineering, Univ. of Buenos Aires\hfill 2019 - 2021\\
+Member, Advisory Board, Dept. of Electronics, Univ. of Buenos Aires \hfill 2018 - 2021\\
+Member, Curricular Committee, Electronic Engineering Degree, Univ. of Buenos Aires \hfill 2017 - 2021\\
+
+
+
+
+
+\end{document}

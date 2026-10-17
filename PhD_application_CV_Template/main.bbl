@@ -1,0 +1,143 @@
+\begin{thebibliography}{10}
+
+\bibitem{zilberstein2023solving}
+Nicolas Zilberstein, Ashutosh Sabharwal, and Santiago Segarra.
+\newblock Solving linear inverse problems using higher-order annealed
+  {L}angevin diffusion.
+\newblock {\em IEEE Trans. Signal Process.}, 2024.
+
+\bibitem{gama2023unsupervised}
+Fernando Gama, Nicolas Zilberstein, Martin Sevilla, Richard~G Baraniuk, and
+  Santiago Segarra.
+\newblock Unsupervised learning of sampling distributions for particle filters.
+\newblock {\em IEEE Trans. Signal Process.}, 2023.
+
+\bibitem{zilberstein2022annealed}
+Nicolas Zilberstein, Chris Dick, Rahman Doost-Mohammady, Ashutosh Sabharwal,
+  and Santiago Segarra.
+\newblock Annealed {L}angevin dynamics for massive {MIMO} detection.
+\newblock {\em IEEE Trans. Wireless Commun.}, 2022.
+
+\bibitem{zilberstein2021bcs}
+Nicolas Zilberstein, Juan~Augusto Maya, and Andres Altieri.
+\newblock A {BCS} microwave imaging algorithm for object detection and shape
+  reconstruction tested with experimental data.
+\newblock {\em Electr. Lett.}, 57(2):88--91, 2021.
+
+\bibitem{flatiron}
+Nicolas Zilberstein, Santiago Segarra, Eero Simoncelli, and Florentin Guth.
+\newblock Normalized energy models for linear inverse problems.
+\newblock {\em Intl. Conf. on Machine Learning (ICML)}, 2026.
+
+\bibitem{safesampling}
+Nicolas Zilberstein, Santiago Segarra, and Luiz Chamon.
+\newblock Sampling with shielded {L}angevin {M}onte {C}arlo using navigation
+  potentials.
+\newblock In {\em Asilomar Conf. Signals, Syst. and Comp.} IEEE, 2025.
+
+\bibitem{zilberstein2024repulsive}
+Nicolas Zilberstein, Morteza Mardani, and Santiago Segarra.
+\newblock Repulsive latent score distillation for solving inverse problems.
+\newblock {\em Intl. Conf. Learn. Repr. (ICLR)}, 2025.
+
+\bibitem{aligraphon}
+Ali Azizpour, Nicolas Zilberstein, and Santiago Segarra.
+\newblock Scalable implicit graphon learning.
+\newblock {\em Intl. Conf. on Artif. Intell. and Stat. (AISTATS)}, 2025.
+
+\bibitem{cox_ICASSP2024}
+Benjamin Cox, Sara Perez-Vieites, Nicolas Zilberstein, Martin Sevilla, Santiago
+  Segarra, and Victor Elvira.
+\newblock End-to-end learning of {G}aussian mixture proposals using
+  differentiable particle filters and neural networks.
+\newblock {\em IEEE Intl. Conf. Acoust., Speech and Signal Process. (ICASSP)},
+  2024.
+
+\bibitem{zilberstein_ICASSP2024}
+Nicolas Zilberstein, Ananthram Swami, and Santiago Segarra.
+\newblock Joint channel estimation and data detection in massive {MIMO} systems
+  based on diffusion models.
+\newblock {\em IEEE Intl. Conf. Acoust., Speech and Signal Process. (ICASSP)},
+  2024.
+
+\bibitem{asilomar2023}
+Martin Sevilla*, Nicolas Zilberstein*, Benjamin Cox, Sara Perez-Vieites, Victor
+  Elvira, and Santiago Segarra.
+\newblock State and dynamics estimation with the {K}alman--{L}angevin filter.
+\newblock In {\em Asilomar Conf. Signals, Syst. and Comp.}, pages 53--57. IEEE,
+  2023.
+
+\bibitem{zilberstein_GSPW}
+Nicolas Zilberstein, Chris Dick, Rahman Doost-Mohammady, Ashutosh Sabharwal,
+  and Santiago Segarra.
+\newblock Accelerated massive {MIMO} detector based on annealed underdamped
+  {L}angevin dynamics.
+\newblock In {\em Graph Signal Processing Workshop}, 2023.
+
+\bibitem{zilberstein_ICASSP2023}
+Nicolas Zilberstein, Chris Dick, Rahman Doost-Mohammady, Ashutosh Sabharwal,
+  and Santiago Segarra.
+\newblock Accelerated massive {MIMO} detector based on annealed underdamped
+  {L}angevin dynamics.
+\newblock In {\em IEEE Intl. Conf. Acoust., Speech and Signal Process.
+  (ICASSP)}, 2023.
+
+\bibitem{zilberstein_EUSIPCO2021}
+Nicolas Zilberstein, Chris Dick, Rahman Doost-Mohammady, Ashutosh Sabharwal,
+  and Santiago Segarra.
+\newblock Detection by sampling: Massive {MIMO} detector based on {L}angevin
+  dynamics.
+\newblock In {\em European Signal Process. Conf. (EUSIPCO)}, pages 1651--1655,
+  2022.
+
+\bibitem{zilberstein_EUSIPCO2021_robust}
+Nicolas Zilberstein, Chris Dick, Rahman Doost-Mohammady, Ashutosh Sabharwal,
+  and Santiago Segarra.
+\newblock Robust {MIMO} detection using hypernetworks with learned
+  regularizers.
+\newblock In {\em European Signal Process. Conf. (EUSIPCO)}, pages 1626--1630.
+  IEEE, 2022.
+
+\bibitem{gama2022unrolling}
+Fernando Gama, Nicolas Zilberstein, Richard~G Baraniuk, and Santiago Segarra.
+\newblock Unrolling particles: Unsupervised learning of sampling distributions.
+\newblock In {\em IEEE Intl. Conf. Acoust., Speech and Signal Process.
+  (ICASSP)}, pages 5498--5502. IEEE, 2022.
+
+\bibitem{zilberstein2018particle}
+Nicolas Zilberstein and Bruno Cernuschi-Frias.
+\newblock Particle filter with unknown noise statistics and with prior
+  knowledge.
+\newblock In {\em 2018 Argentine Conference on Automatic Control (AADECA)},
+  pages 1--6. IEEE, 2018.
+
+\bibitem{flow_maps}
+Nicolas Zilberstein, Morteza Mardani, and Santiago Segarra.
+\newblock Flow map denoisers: Traversing the distortion-perception plane for
+  inverse problems.
+\newblock {\em ICML workshop SPIGM}, 2026.
+
+\bibitem{pifm}
+Haoming Chen, Nicolas Zilberstein, and Santiago Segarra.
+\newblock Prior-informed flow matching for graph reconstruction.
+\newblock {\em ICML workshop SPIGM}, 2026.
+
+\bibitem{tenoriograph}
+Victor~M. Tenorio, Nicolas Zilberstein, Santiago Segarra, and Antonio~G.
+  Marques.
+\newblock Graph guided diffusion: Unified guidance for conditional graph
+  generation.
+\newblock {\em NeurIPS workshop NPGML}, 2025.
+
+\bibitem{zilberstein2024topological}
+Nicolas Zilberstein, Akshay Malhotra, Yugeswar Deenoo, and Shahab Hamidi-Rad.
+\newblock Topology preserving regularization for independent training of
+  inter-operable models.
+\newblock {\em NeurIPS workshop UniReps}, 2024.
+
+\bibitem{aligraphon2}
+Ali Azizpour, Nicolas Zilberstein, and Santiago Segarra.
+\newblock Model-driven graph contrastive learning.
+\newblock {\em arXiv preprint arXiv:2506.06212}, 2025.
+
+\end{thebibliography}

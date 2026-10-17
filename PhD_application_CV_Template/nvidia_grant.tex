@@ -1,0 +1,102 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{bibentry}
+\usepackage{natbib}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+
+% Begin document
+\begin{document}
+
+\nobibliography{citations}
+\bibliographystyle{unsrt}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{}
+\fancyhead[R]{}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\begin{flushleft}
+\centering\textbf{\LARGE Nicolas Zilberstein}\\[2pt] % Name
+Houston, TX $-$ \href{mailto:JohnDoe@gmail.com}{nzilberstein@rice.edu} \\ \url{https://sites.google.com/view/nzilberstein} $-$ \url{https://github.com/nzilberstein}
+\end{flushleft}
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{Rice University} \hfill Houston, TX\\ % University name and location
+Ph.D. in Electrical and Computer Engineering, \hfill 2021 - 2026 (Expected)\\ % Degree and GPA
+Advisor: Prof. Santiago Segarra\\
+Keywords: Inverse problems, Diffusion models, Acceleration\\
+
+% Experience Section
+\section*{WORK EXPERIENCE}
+
+\noindent
+\textbf{Center for Computational Neuroscience, Flatiron Institute} \hfill New York City, NY\\ % Company name and location
+\textit{Summer research intern at Computational Vision group} \hfill May 2025 - August 2025\\ 
+PIs: Eero Simoncelli and Florentin Guth\\ % Position and duration
+Keywords: Energy-based model, inverse problems, anisotropic diffusion models.\\
+
+\noindent
+\textbf{InterDigital} \hfill Los Altos, CA\\ % Company name and location
+\textit{Research intern - AI for wireless} \hfill May 2024 - August 2024\\ % Position and duration
+PIs: Akshay Malhotra and Shahab Hamidi-Rad\\
+Keywords: Topological autoencoder, zero-shot stitching, latent space communication.\\
+
+
+\section*{AWARDS}
+\textbf{Google PhD fellowship nominee at Rice University}  \hfill Houston, TX\\
+One of the two students nominated by the ECE department at Rice \hfill 2025\\
+for applying to the Google Ph.D. fellowship.\\ \\
+\textbf{AI generated visuals: a solution for image demand in social science research}  \hfill Houston, TX\\
+Interdisciplinary grant conceived by the Center for Computational Insights on Inequality \hfill 2025\\
+and Society at Rice University. 5000 USD of funding\\ \\
+\textbf{Ken Kennedy – HPE Cray Graduate Fellowship}  \hfill Houston, TX\\
+One-year graduate fellowships for outstanding graduate students at Rice University \hfill 2024\\
+
+\subsection*{\textit{Travel grants}}
+\textbf{ICLR 2025 Travel Grant}\hfill 2025\\
+\textbf{AISTATS 2025 Travel Grant}\hfill 2025\\
+\textbf{REA (Rice Engineering Alumni) Graduate Student Travel Grant}\hfill 2025\\
+% \section*{SPECI}
+% \textbf{Excellence in Research}  \hfill Houston, TX\\ 
+% Award from the ECE section of the Gulf Coast Undergraduate Research Symposium at Rice University \hfill 2020\\ \\
+% \textbf{UBACyT Scholarship (declined)}  \hfill Buenos Aires, Argentina\\ 
+% Scolarshisp for undergraduate students to develop a research project \hfill 2018
+
+\section*{PUBLICATIONS}
+% \subsection*{Under review}
+
+% \begin{enumerate}
+% \end{enumerate}
+
+\begin{enumerate}[start=1,label={[P\arabic*]}]
+    \item \bibentry{pifm}\\
+    \item \bibentry{zilberstein2024repulsive}\\
+    \item \bibentry{zilberstein2023solving}\\
+    \item \bibentry{zilberstein2022annealed} \\
+    \item \bibentry{tenoriograph} \\
+    % \item \bibentry{che} \\
+\end{enumerate}
+
+\end{document}
