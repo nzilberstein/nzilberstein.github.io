@@ -14,16 +14,16 @@ title: "CV"
 
 **Ph.D., Electrical and Computer Engineering** · Rice University, Houston, TX · Jan 2021 – Sep 2026
 
-- Thesis: *From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems*
+- Thesis: *From Guided Sampling to Learned Solvers: Diffusion Models for Inverse Problems* ([PDF](/thesis/zilberstein_phd_thesis.pdf) · [slides](/slides/zilberstein_phd_defense.pdf))
 - Advisor: [Santiago Segarra](https://profiles.rice.edu/faculty/santiago-segarra)
 
 **M.S., Electrical and Computer Engineering** · Rice University, Houston, TX · Jan 2021 – Nov 2023
 
-- Thesis: *Annealed Langevin dynamics for massive MIMO communications*
+- Thesis: *Annealed Langevin dynamics for massive MIMO communications* ([PDF](/thesis/zilberstein_ms_thesis.pdf))
 
 **B.S., Electrical Engineering (with honors)** · University of Buenos Aires, Argentina · Mar 2013 – Feb 2020
 
-- Thesis: *Development of inference algorithms for UWB-GPR signals*
+- Thesis: *Development of inference algorithms for UWB-GPR signals* ([PDF](/thesis/zilberstein_bs_thesis.pdf), in Spanish)
 
 ## Experience
 
