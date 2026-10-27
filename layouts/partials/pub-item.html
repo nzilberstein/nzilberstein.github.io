@@ -33,12 +33,14 @@
 {{ end }}
 
 {{/* Line 2: venue exactly as the .bib gives it (an @string expands to
-     its full text), plus year, with any note in parentheses; then links. */}}
-{{ $venue := $pub.venue }}
+     its full text), plus year, with any note in parentheses; then links.
+     The note keeps \textbf{...} from the .bib as bold (note_html). */}}
+{{ $venue := htmlEscape $pub.venue }}
 {{ if and $venue $pub.year }}{{ $venue = printf "%s %s" $venue $pub.year }}{{ end }}
-{{ with $pub.note }}{{ $venue = printf "%s (%s)" $venue . }}{{ end }}
+{{ $note := $pub.note_html | default (htmlEscape $pub.note) }}
+{{ with $note }}{{ $venue = printf "%s (%s)" $venue . }}{{ end }}
 {{ $meta := slice }}
-{{ with $venue }}{{ $meta = $meta | append (printf `<em class="pub__venue">%s</em>` (htmlEscape .)) }}{{ end }}
+{{ with $venue }}{{ $meta = $meta | append (printf `<em class="pub__venue">%s</em>` .) }}{{ end }}
 {{ $links := slice }}
 {{ with $pub.url }}{{ $links = $links | append (printf `<a href="%s">paper</a>` .) }}{{ end }}
 {{ with $pub.code }}{{ $links = $links | append (printf `<a href="%s">code</a>` .) }}{{ end }}

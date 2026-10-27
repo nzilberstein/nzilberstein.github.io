@@ -8,6 +8,7 @@ Entries are grouped by year, newest first. Tag an entry with
 `keywords = {highlighted}` to have it appear on the home page.
 """
 
+import html
 import json
 import os
 import re
@@ -34,6 +35,23 @@ def clean(value):
     value = re.sub(r"\\[a-zA-Z]+", "", value)   # leftover commands
     value = value.replace("{", "").replace("}", "")
     return re.sub(r"\s+", " ", value).strip()
+
+
+def rich(value):
+    """Like clean(), but returns HTML that keeps \\textbf{...} as <strong>.
+    Used for notes, e.g. note = {\\textbf{Best paper award}}."""
+    parts = re.split(r"\\textbf\s*\{((?:[^{}]|\{[^{}]*\})*)\}", value)
+    out = []
+    for i, part in enumerate(parts):
+        text = html.escape(clean(part))
+        if not text:
+            continue
+        if i % 2:
+            text = f"<strong>{text}</strong>"
+        gap = part[:1].isspace() or parts[i - 1][-1:].isspace()
+        lead = " " if out and gap else ""
+        out.append(lead + text)
+    return "".join(out)
 
 
 def read_part(text, i):
@@ -128,6 +146,8 @@ def parse(text):
                     fields["_short_" + fm.group(1).lower()] = tok
             value, i = read_value(text, fm.end(), macros)
             fields[fm.group(1).lower()] = clean(value)
+            if fm.group(1).lower() == "note":
+                fields["_note_html"] = rich(value)
             while i < len(text) and text[i] in " \n\r\t,":
                 i += 1
             if i < len(text) and text[i] == "}":
@@ -213,6 +233,8 @@ def main():
             "doi": f.get("doi", ""),
             "code": f.get("code", ""),
             "note": f.get("note", ""),
+            # The note as HTML, with \\textbf{...} kept as bold.
+            "note_html": f.get("_note_html", ""),
             # Optional short label used in the matrix instead of the
             # full title, e.g. short = {Flow Map Denoisers}
             "short": f.get("short") or f.get("shortname", ""),
