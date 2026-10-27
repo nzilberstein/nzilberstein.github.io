@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{pifm}
+Haoming Chen, Nicolas Zilberstein, and Santiago Segarra.
+\newblock Prior-informed flow matching for graph reconstruction.
+\newblock {\em Trans. Mach. Learn. Res. (TMLR)}, 2026.
+
 \bibitem{zilberstein2023solving}
 Nicolas Zilberstein, Ashutosh Sabharwal, and Santiago Segarra.
 \newblock Solving linear inverse problems using higher-order annealed
@@ -23,6 +28,18 @@ Nicolas Zilberstein, Juan~Augusto Maya, and Andres Altieri.
 \newblock A {BCS} microwave imaging algorithm for object detection and shape
   reconstruction tested with experimental data.
 \newblock {\em Electr. Lett.}, 57(2):88--91, 2021.
+
+\bibitem{dag_pnp}
+Nicolas Zilberstein, Ali Azizpour, Gonzalo Mateos, and Santiago Segarra.
+\newblock {DAG-PnP}: Plug-and-play causal discovery with diffusion priors.
+\newblock In {\em Asilomar Conf. Signals, Syst. and Comp.} IEEE, 2026.
+\newblock \textbf{Best student paper contest (top 8)}.
+
+\bibitem{flow_maps}
+Nicolas Zilberstein, Morteza Mardani, and Santiago Segarra.
+\newblock Flow map denoisers: Traversing the distortion-perception plane for
+  inverse problems.
+\newblock {\em Advances in Neural Inf. Process. Syst. (NeurIPS)}, 2026.
 
 \bibitem{flatiron}
 Nicolas Zilberstein, Santiago Segarra, Eero Simoncelli, and Florentin Guth.
@@ -110,17 +127,6 @@ Nicolas Zilberstein and Bruno Cernuschi-Frias.
   knowledge.
 \newblock In {\em 2018 Argentine Conference on Automatic Control (AADECA)},
   pages 1--6. IEEE, 2018.
-
-\bibitem{flow_maps}
-Nicolas Zilberstein, Morteza Mardani, and Santiago Segarra.
-\newblock Flow map denoisers: Traversing the distortion-perception plane for
-  inverse problems.
-\newblock {\em ICML workshop SPIGM}, 2026.
-
-\bibitem{pifm}
-Haoming Chen, Nicolas Zilberstein, and Santiago Segarra.
-\newblock Prior-informed flow matching for graph reconstruction.
-\newblock {\em ICML workshop SPIGM}, 2026.
 
 \bibitem{tenoriograph}
 Victor~M. Tenorio, Nicolas Zilberstein, Santiago Segarra, and Antonio~G.
